@@ -1,0 +1,58 @@
+@layer components {
+  .flex-center-between {
+    @apply flex items-center justify-between;
+  }
+  .layout-wrapper {
+    @apply min-h-screen max-w-4xl mx-auto flex flex-col items-center;
+  }
+  .text-heading {
+    @apply text-gray-800 dark:text-gray-100 font-bold;
+  }
+
+  .text-body {
+    @apply text-gray-600 dark:text-gray-300;
+  }
+
+  .text-subtle {
+    @apply text-gray-500 dark:text-gray-400 text-sm;
+  }
+
+  .text-muted {
+    @apply text-sm text-gray-400 dark:text-gray-500;
+  }
+
+  .text-danger {
+    @apply text-red-600 dark:text-red-400;
+  }
+
+  .hover-opacity {
+    @apply hover:opacity-65;
+  }
+  .p-content {
+    @apply py-5 px-3.75;
+  }
+  .px-content {
+    @apply px-3.75;
+  }
+  .py-content {
+    @apply py-5;
+  }
+  .article-padding {
+    @apply py-8 px-10;
+  }
+  .btn-padding {
+    @apply py-2 px-4;
+  }
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+  .margin-center {
+    @apply mx-auto my-0;
+  }
+  .flex-wrap {
+    @apply flex flex-wrap;
+  }
+  .date {
+    @apply text-sm text-gray-500;
+  }
+}

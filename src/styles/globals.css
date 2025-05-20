@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+@import './components.css';
+@import './theme.css';
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  html {
+    color-scheme: light dark;
+  }
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    @apply antialiased;
+  }
+
+  html,
+  body {
+    transition-property: background-color;
+    transition-duration: 100ms;
+    transition-timing-function: ease-in;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  button {
+    @apply cursor-pointer bg-none border-none;
+    box-shadow: (var(--shadow));
+    font: inherit;
+    color: inherit;
+  }
+
+  p {
+    @apply font-medium;
+  }
+}

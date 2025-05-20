@@ -1,0 +1,42 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+
+  "files.eol": "\n",
+  "files.autoSave": "onWindowChange",
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/dist": true,
+    "**/.next": true
+  },
+
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+
+  "prettier.requireConfig": true,
+  "git.autofetch": true,
+  "explorer.confirmDelete": false,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+
+  "tailwindCSS.includeLanguages": {
+    "typescript": "html",
+    "typescriptreact": "html",
+    "javascript": "html",
+    "javascriptreact": "html"
+  },
+  "tailwindCSS.experimental.classRegex": [
+    "clsx\\(([^)]*)\\)", // clsx(...) 안의 클래스 추출
+    "cn\\(([^)]*)\\)" // cn(...) 안의 클래스 추출 (사용 중이면)
+  ],
+  "jest.runMode": "on-demand",
+  "cSpell.words": ["giscus", "sanghyeon", "Pretendard", "clsx", "rgba", "opengraph", "Toastify"]
+}
