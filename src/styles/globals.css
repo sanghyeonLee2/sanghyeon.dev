@@ -3,9 +3,18 @@
 @import './theme.css';
 @custom-variant dark (&:where(.dark, .dark *));
 
+@font-face {
+  font-family: 'Cafe24Ssurround';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @layer base {
   html {
     color-scheme: light dark;
+    scroll-behavior: smooth;
   }
   body {
     background-color: var(--color-bg);
@@ -30,6 +39,9 @@
 
   a {
     text-decoration: none;
+    &:hover {
+      @apply text-blue-500;
+    }
   }
 
   button {
@@ -38,8 +50,14 @@
     font: inherit;
     color: inherit;
   }
-
+  h2 {
+    font-family: 'Cafe24Ssurround';
+    @apply text-4xl md:text-5xl mb-10;
+  }
+  h3 {
+    @apply font-extrabold text-3xl md:text-3xl mb-3;
+  }
   p {
-    @apply font-medium;
+    @apply text-base md:text-lg leading-relaxed font-bold;
   }
 }
