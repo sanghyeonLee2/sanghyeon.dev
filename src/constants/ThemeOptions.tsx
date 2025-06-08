@@ -1,5 +1,5 @@
 import { Sun, Moon, Monitor } from 'lucide-react';
-import { DropdownOptions } from '@/types/ui/dropdown';
+import { DropdownOptions } from '@/types/ui';
 
 export const THEME_OPTIONS: DropdownOptions[] = [
   { value: 'light', label: 'Light', icon: <Sun className="w-4 h-4" /> },
