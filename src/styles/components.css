@@ -1,14 +1,27 @@
 @layer components {
+  .font-cafe {
+    font-family: 'Cafe24Ssurround', sans-serif;
+  }
+  .pt-section {
+    @apply pt-20;
+  }
   .flex-center-between {
     @apply flex items-center justify-between;
   }
   .layout-wrapper {
-    @apply min-h-screen max-w-4xl mx-auto flex flex-col items-center;
+    @apply min-h-screen mx-auto flex flex-col items-center;
+  }
+  .layout-wrap-max-w {
+    @apply max-w-4xl;
   }
   .text-heading {
     @apply text-gray-800 dark:text-gray-100 font-bold;
   }
-
+  .clip-island {
+    clip-path: path(
+      'M0,100 Q10,80 20,100 Q30,80 40,100 Q50,80 60,100 Q70,80 80,100 Q90,80 100,100 L100,150 L0,150 Z'
+    );
+  }
   .text-body {
     @apply text-gray-600 dark:text-gray-300;
   }
@@ -29,13 +42,13 @@
     @apply hover:opacity-65;
   }
   .p-content {
-    @apply py-5 px-3.75;
+    @apply py-4 px-3.75;
   }
   .px-content {
     @apply px-3.75;
   }
   .py-content {
-    @apply py-5;
+    @apply py-4;
   }
   .article-padding {
     @apply py-8 px-10;
