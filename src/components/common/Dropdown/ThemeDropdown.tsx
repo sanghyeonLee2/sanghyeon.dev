@@ -2,7 +2,7 @@
 
 import { useNextTheme } from '@/hooks/useNextTheme';
 import useDropdown from '@/hooks/useDropDown';
-import DropdownButton from '@/components/atoms/dropdown/DropdownButton';
+import DropdownButton from '@/components/common/Dropdown/DropdownButton';
 import { THEME_OPTIONS } from '@/constants/ThemeOptions';
 import IconDropdownList from './IconDropdownList';
 import { useThemeSelect } from '@/hooks/useThemeSelect';

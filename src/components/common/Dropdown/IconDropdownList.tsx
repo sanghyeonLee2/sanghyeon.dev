@@ -1,8 +1,8 @@
 'use client';
 
-import DropdownItem from '@/components/atoms/dropdown/DropdownItem';
+import DropdownItem from '@/components/common/Dropdown/DropdownItem';
 import React from 'react';
-import { DropdownOptions } from '@/types/ui/dropdown';
+import { DropdownOptions } from '@/types/ui';
 
 interface IconDropdownListProps {
   options: DropdownOptions[];
