@@ -1,26 +1,30 @@
 'use client';
 
 import clsx from 'clsx';
-import { ButtonProps } from './Button.types';
+import React, { forwardRef } from 'react';
+import type { ButtonHTMLAttributes } from 'react';
 
-export default function Button({
-  text,
-  onClick,
-  className,
-  type = 'button',
-  ...rest
-}: ButtonProps) {
-  return (
-    <button
-      type={type}
-      onClick={onClick}
-      className={clsx(
-        'hover:opacity-85 text-[var(--color-button-text)] text-base font-medium px-4 py-2 rounded bg-[var(--color-button-bg)] transition',
-        className,
-      )}
-      {...rest}
-    >
-      {text}
-    </button>
-  );
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  text?: string;
 }
+
+const Button = forwardRef<HTMLButtonElement, ButtonProps>(
+  ({ children, text, className, type = 'button', ...rest }, ref) => {
+    return (
+      <button
+        ref={ref}
+        type={type}
+        className={clsx(
+          'hover:opacity-80 text-[var(--color-button-text)] text-base font-medium transition',
+          className,
+        )}
+        {...rest}
+      >
+        {children}
+        {text}
+      </button>
+    );
+  },
+);
+
+export default Button;
