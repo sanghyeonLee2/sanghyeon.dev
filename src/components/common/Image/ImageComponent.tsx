@@ -10,7 +10,14 @@ interface ImageProps {
 const ImageComponent = ({ src, className, alt }: ImageProps) => {
   return (
     <div className={clsx('relative overflow-hidden ', className)}>
-      <Image src={src} alt={alt} fill className="object-cover" />
+      <Image
+        src={src}
+        alt={alt}
+        fill
+        sizes="(max-width: 768px) 100vw, 50vw"
+        className="object-cover"
+        priority
+      />
     </div>
   );
 };
