@@ -14,10 +14,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       <button
         ref={ref}
         type={type}
-        className={clsx(
-          'hover:opacity-80 text-[var(--color-button-text)] text-base font-medium transition',
-          className,
-        )}
+        className={clsx('button-hover transition', className)}
         {...rest}
       >
         {children}
