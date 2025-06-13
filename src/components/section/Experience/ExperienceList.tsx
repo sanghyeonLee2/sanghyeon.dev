@@ -1,9 +1,10 @@
+import TextList from '@/components/common/TextList/TextList';
 import { ExperienceType } from '@/components/section/Experience/experience.type';
 import React from 'react';
 
 const ExperienceList = ({ experiences }: { experiences: ExperienceType[] }) => {
   return (
-    <ul className="divide-y divide-gray-300 mb-8">
+    <ul className="divide-y divide-gray-300 mb-10">
       {experiences.map((experience) => (
         <li key={experience.name}>
           <article className="flex flex-col md:flex-row gap-6 p-9 my-3">
@@ -16,13 +17,7 @@ const ExperienceList = ({ experiences }: { experiences: ExperienceType[] }) => {
               </div>
             </div>
             <div className="content-center">
-              <ul className="list-disc pl-5 flex-grow flex flex-col gap-2">
-                {experience.contents.map((content) => (
-                  <li key={content}>
-                    <p>{content}</p>
-                  </li>
-                ))}
-              </ul>
+              <TextList textList={experience.contents} />
             </div>
           </article>
         </li>
