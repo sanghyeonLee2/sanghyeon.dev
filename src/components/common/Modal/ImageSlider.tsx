@@ -19,7 +19,7 @@ const ImageSlider = ({ imgs }: { imgs: StaticImageData[] }) => {
           slidesPerView: 2,
         },
       }}
-      className="w-full h-70 mb-4"
+      className="w-full h-70"
     >
       {imgs.map((img) => (
         <SwiperSlide key={img.src}>
