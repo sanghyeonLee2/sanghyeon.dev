@@ -2,9 +2,13 @@
   .font-cafe {
     font-family: 'Cafe24Ssurround', sans-serif;
   }
-  .pt-section {
-    @apply pt-20;
+  .header-bg {
+    @apply bg-[#f8f9fa]/90 dark:bg-[#13161c]/90;
   }
+  .button-hover {
+    @apply hover:bg-gray-200 dark:hover:bg-gray-600;
+  }
+
   .flex-center-between {
     @apply flex items-center justify-between;
   }
@@ -39,7 +43,7 @@
   }
 
   .hover-opacity {
-    @apply hover:opacity-65;
+    @apply hover:opacity-80;
   }
   .p-content {
     @apply py-4 px-3.75;
