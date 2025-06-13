@@ -8,7 +8,7 @@ interface LayoutProps {
 
 const Layout = ({ children, sectionId }: LayoutProps) => {
   return (
-    <section id={sectionId} className="pt-section">
+    <section id={sectionId} className="py-20">
       <h2 className="capitalize">{sectionId}</h2>
       {children}
     </section>
