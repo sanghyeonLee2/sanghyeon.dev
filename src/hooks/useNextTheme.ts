@@ -4,10 +4,9 @@ import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
 
 type UseNextThemeReturn = {
-  setTheme: (theme: string) => void;
+  setTheme: () => void;
   mounted: boolean;
   currentTheme: string | undefined;
-  isDark: boolean;
 };
 
 export function useNextTheme(): UseNextThemeReturn {
@@ -18,10 +17,13 @@ export function useNextTheme(): UseNextThemeReturn {
     setMounted(true);
   }, []);
 
+  const toggleTheme = () => {
+    setTheme(resolvedTheme === 'dark' ? 'light' : 'dark');
+  };
+
   return {
-    setTheme,
+    setTheme: toggleTheme,
     mounted,
     currentTheme,
-    isDark: resolvedTheme === 'dark',
   };
 }
