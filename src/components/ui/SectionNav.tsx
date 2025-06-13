@@ -1,16 +1,27 @@
 'use client';
 
 import React from 'react';
+import clsx from 'clsx';
 import { SECTIONS } from '@/constants/section';
-import ScrollLink from '@/components/common/Link/ScrollLink';
+import ALink from '@/components/common/Link/ALink';
+import { useActiveSectionNav } from '@/hooks/useActiveSectionNav';
 
-const SectionNav = () => {
+const SectionNav = ({ className }: { className?: string }) => {
+  const activeId = useActiveSectionNav();
+
   return (
     <nav>
-      <ul className="flex-center-between gap-3 px-2">
+      <ul className={className}>
         {SECTIONS.map(({ id, label }) => (
           <li key={id}>
-            <ScrollLink text={label} href={id} />
+            <ALink
+              className={clsx(
+                'font-extrabold text-[1.1rem]',
+                activeId === id && 'text-[var(--color-primary)]',
+              )}
+              text={label}
+              href={`#${id}`}
+            />
           </li>
         ))}
       </ul>
