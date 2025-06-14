@@ -1,9 +1,10 @@
+import { MotionItem } from '@/components/common/motion';
 import { TechStackType } from '@/components/section/Projects/projects.type';
 import React from 'react';
 
 const TechStack = ({ techStack }: { techStack: TechStackType[] }) => {
   return (
-    <div className="flex gap-2 flex-wrap py-content">
+    <MotionItem as="div" className="flex gap-2 flex-wrap py-content">
       {techStack.map((tech) => (
         <span
           key={tech.name}
@@ -13,7 +14,7 @@ const TechStack = ({ techStack }: { techStack: TechStackType[] }) => {
           {tech.name}
         </span>
       ))}
-    </div>
+    </MotionItem>
   );
 };
 
