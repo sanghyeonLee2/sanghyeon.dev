@@ -1,7 +1,6 @@
 'use client';
 import { TEXT } from '@/constants/text';
 import Button from '../common/Button/Button';
-import { ROUTES } from '@/constants/routes';
 import { useRouter } from 'next/navigation';
 
 export default function NotFound() {
@@ -13,7 +12,7 @@ export default function NotFound() {
       <Button
         text={TEXT.BUTTON.GO_HOME}
         className="w-full max-w-[240px]"
-        onClick={() => router.push(ROUTES.HOME)}
+        onClick={() => router.push('/')}
       />
     </main>
   );
