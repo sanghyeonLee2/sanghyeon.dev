@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Button from '@/components/common/Button/Button';
-import ThemeToggle from '../common/Toggle/ThemeToggle';
+import ThemeToggle from './ThemeToggle';
 import SectionNav from '@/components/ui/SectionNav';
 import { IoIosMenu } from 'react-icons/io';
 import DropdownList from '@/components/common/Dropdown/DropdownList';

@@ -1,6 +1,5 @@
 import React from 'react';
-
-import { LinkType } from '@/types/ui';
+import { LinkType } from '@/common/types';
 
 const ALink = ({ text, icon, ...rest }: LinkType) => {
   return (

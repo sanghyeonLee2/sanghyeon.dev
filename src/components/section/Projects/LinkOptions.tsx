@@ -1,6 +1,7 @@
 import ALink from '@/components/common/Link/ALink';
-import { LinkType } from '@/types/ui';
 import React from 'react';
+import { LinkType } from '@/common/types';
+import { BLANK_LINK } from '@/constants/common';
 
 const LinkOptions = ({ linksOptions }: { linksOptions: LinkType[] }) => {
   return (
@@ -12,11 +13,8 @@ const LinkOptions = ({ linksOptions }: { linksOptions: LinkType[] }) => {
         >
           <ALink
             className="flex-col gap-1 flex-center font-light text-[0.75rem] hover:text-white py-1.5 px-3"
-            icon={option.icon}
-            href={option.href}
-            text={option.text}
-            target="_blank"
-            rel="noopener noreferrer"
+            {...option}
+            {...BLANK_LINK}
             onClick={(e) => e.stopPropagation()}
           />
         </li>

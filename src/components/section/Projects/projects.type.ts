@@ -1,15 +1,18 @@
-import { LinkType } from '@/types/ui';
 import type { StaticImageData } from 'next/image';
+import { LinkType } from '@/common/types';
 
 export type ProjectsType = {
-  key: number;
-  period: string;
-  title: string;
-  imgs: StaticImageData[];
-  techStack: TechStackType[];
-  details: string[];
-  description: string;
-  linksOptions: LinkType[];
+  subheading: string;
+  contents: {
+    key: number;
+    period: string;
+    title: string;
+    imgs: StaticImageData[];
+    techStack: TechStackType[];
+    details: string[];
+    description: string;
+    linksOptions: LinkType[];
+  }[];
 };
 
 export interface TechStackType {
