@@ -1,5 +1,8 @@
 export interface ExperienceType {
-  name: string;
-  period: string;
-  contents: string[];
+  subheading: string;
+  contents: {
+    name: string;
+    period: string;
+    summaries: string[];
+  }[];
 }

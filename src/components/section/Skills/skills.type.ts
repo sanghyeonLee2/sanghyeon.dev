@@ -1,13 +1,11 @@
 import { IconType } from 'react-icons';
 
-type BaseSkill = {
-  name: string;
-  icon: IconType;
-  color: string;
-};
-
-export type UsedSkillsType = BaseSkill;
-
-export type CoreSkillsType = BaseSkill & {
-  description: string[];
+export type SkillType = {
+  subheading: string;
+  skills: {
+    name: string;
+    icon: IconType;
+    color: string;
+    descriptions?: string[];
+  }[];
 };
