@@ -1,7 +1,13 @@
 import { FaGithub, FaBlog } from 'react-icons/fa';
-import { LinkType } from '@/types/ui';
+import { MdEmail } from 'react-icons/md';
+import { LinkType } from '@/common/types';
 
 export const PROFILE_OPTIONS: LinkType[] = [
+  {
+    text: 'hyeon012366@gmail.com',
+    icon: <MdEmail className="text-2xl" />,
+    href: 'mailto:hyeon012366@gmail.com',
+  },
   {
     text: 'https://github.com/sanghyeonLee2',
     icon: <FaGithub className="text-2xl" />,
