@@ -12,7 +12,7 @@ const UsedSkills = () => {
           <MotionItem
             as="li"
             key={name}
-            className="flex-center flex-col p-content rounded-xl bg-[var(--color-btn-bg)] shadow-[var(--shadow)]"
+            className="flex-center flex-col transition-transform duration-200 hover:-translate-y-1 cursor-pointer p-content rounded-xl bg-[var(--color-btn-bg)] shadow-[var(--shadow)]"
           >
             <Icon className="w-10 h-10 mb-2" style={{ color }} />
             <span className="text-sm">{name}</span>
