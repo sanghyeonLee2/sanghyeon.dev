@@ -1,10 +1,9 @@
 import React from 'react';
-import { SectionId } from '@/constants/section';
 import { motion } from 'framer-motion';
 
 interface LayoutProps {
   children: React.ReactNode;
-  sectionId: SectionId;
+  sectionId: string;
 }
 const headingMotion = {
   hidden: { opacity: 0, y: 20 },
