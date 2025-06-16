@@ -9,10 +9,10 @@ const LinkOptions = ({ linksOptions }: { linksOptions: LinkType[] }) => {
       {linksOptions.map((option) => (
         <li
           key={option.href}
-          className="hover:bg-[var(--color-primary)] dark:hover-opacity rounded bg-[var(--color-btn-bg)] "
+          className="rounded bg-[var(--color-btn-bg)] hover:bg-[var(--color-primary)]/60 transition-colors duration-300"
         >
           <ALink
-            className="flex-col gap-1 flex-center font-light text-[0.75rem] hover:text-white py-1.5 px-3"
+            className="flex-col gap-1 flex-center font-light text-[0.75rem] text-inherit hover:text-white py-1.5 px-3 transition-colors duration-300"
             {...option}
             {...BLANK_LINK}
             onClick={(e) => e.stopPropagation()}
