@@ -11,14 +11,10 @@ const ExperienceList = ({ contents, subheading }: ExperienceType) => {
       <ul className="divide-y divide-gray-300 mb-10">
         {contents.map((content) => (
           <li key={content.name}>
-            <MotionItem as="article" className="flex flex-col md:flex-row gap-6 p-9">
-              <div className="flex-center">
-                <div className="flex-col md:items-start md:w-70 flex-shrink-0">
-                  <h3 className="text-2xl font-semibold content-center text-center">
-                    {content.name}
-                  </h3>
-                  <p className="text-sm text-gray-400 text-center">{content.period}</p>
-                </div>
+            <MotionItem as="article" className="flex flex-col md:flex-row gap-6 py-8 px-3">
+              <div className="flex-col md:w-70 flex-shrink-0">
+                <p className="text-xl md:text-2xl content-center text-center">{content.name}</p>
+                <p className="text-sm text-gray-400 text-center">{content.period}</p>
               </div>
               <div className="content-center">
                 <TextList textList={content.summaries} />

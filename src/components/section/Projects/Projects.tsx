@@ -14,12 +14,9 @@ const Projects = () => {
       {PROJECT.contents.map((content) => (
         <MotionContainer as="li" amount={0.2} key={content.key} className="h-full py-10">
           <article>
-            <MotionItem as="div" className="flex-center-between">
-              <div>
-                <h3 className="text-4xl">{content.title}</h3>
-                <p className="text-gray-400">{content.period}</p>
-              </div>
-              <LinkOptions linksOptions={content.linksOptions} />
+            <MotionItem as="div">
+              <h3>{content.title}</h3>
+              <p className="text-gray-400 text-sm md:text-[1.1rem]">{content.period}</p>
             </MotionItem>
             <TechStack techStack={content.techStack} />
             <ImageSlider imgs={content.imgs} />
@@ -32,6 +29,7 @@ const Projects = () => {
                 <TextList textList={content.details} />
               </MotionItem>
             </div>
+            <LinkOptions linksOption={content.linksOption} />
           </article>
         </MotionContainer>
       ))}

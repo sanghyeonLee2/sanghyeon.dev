@@ -3,7 +3,7 @@ import { MotionItem } from '@/components/common/motion';
 
 const Subheading = ({ text }: { text: string }) => {
   return (
-    <MotionItem as="p" className="text-2xl pb-5">
+    <MotionItem as="p" className="text-[1.4rem] md:text-2xl font-extrabold pb-5">
       {text}
     </MotionItem>
   );
