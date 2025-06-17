@@ -4,22 +4,20 @@ import {
   SiNextdotjs,
   SiTailwindcss,
   SiGithub,
-  SiFigma,
-  SiFirebase,
   SiVercel,
   SiNotion,
-  SiPostman,
 } from 'react-icons/si';
-import { BRAND_COLORS } from '@/constants/colors';
 import { SkillType } from './skills.type';
+
+const CORE_ICON_CLASS: string = 'w-10 h-10 sm:w-12 sm:h-12';
+const USED_ICON_CLASS: string = 'w-9 h-9 sm:w-10.5 sm:h-10.5';
 
 export const CORE_SKILL: SkillType = {
   subheading: '💡 Core Tech Stack',
   skills: [
     {
-      icon: SiReact,
-      name: 'React',
-      color: BRAND_COLORS.react,
+      text: 'React',
+      icon: <SiReact className={CORE_ICON_CLASS} style={{ color: 'var(--react)' }} />,
       descriptions: [
         '컴포넌트 기반 UI 설계에 익숙합니다.',
         'Hooks를 활용한 상태 관리 경험이 있습니다.',
@@ -28,9 +26,8 @@ export const CORE_SKILL: SkillType = {
       ],
     },
     {
-      icon: SiTypescript,
-      name: 'TypeScript',
-      color: BRAND_COLORS.typescript,
+      text: 'TypeScript',
+      icon: <SiTypescript className={CORE_ICON_CLASS} style={{ color: 'var(--typescript)' }} />,
       descriptions: [
         '정적 타입 정의로 코드 안정성을 높였습니다.',
         'interface, type을 활용한 구조적 타입 작성 경험이 있습니다.',
@@ -39,9 +36,8 @@ export const CORE_SKILL: SkillType = {
       ],
     },
     {
-      icon: SiNextdotjs,
-      name: 'Next.js',
-      color: BRAND_COLORS.next,
+      text: 'Next.js',
+      icon: <SiNextdotjs className={CORE_ICON_CLASS} style={{ color: 'var(--next)' }} />,
       descriptions: [
         'SSR, SSG, ISR 등 다양한 렌더링 방식에 익숙합니다.',
         'API Routes를 활용한 서버리스 함수 작성 경험이 있습니다.',
@@ -50,9 +46,8 @@ export const CORE_SKILL: SkillType = {
       ],
     },
     {
-      icon: SiTailwindcss,
-      name: 'Tailwind CSS',
-      color: BRAND_COLORS.tailwind,
+      text: 'Tailwind CSS',
+      icon: <SiTailwindcss className={CORE_ICON_CLASS} style={{ color: 'var(--tailwind)' }} />,
       descriptions: [
         '유틸리티 클래스를 이용한 빠른 UI 스타일링이 가능합니다.',
         '반응형 디자인 구현에 능숙합니다.',
@@ -66,11 +61,17 @@ export const CORE_SKILL: SkillType = {
 export const USED_SKILL: SkillType = {
   subheading: '🧪 Other Tools I’ve Used',
   skills: [
-    { icon: SiGithub, name: 'GitHub', color: BRAND_COLORS.github },
-    { icon: SiFigma, name: 'Figma', color: BRAND_COLORS.figma },
-    { icon: SiFirebase, name: 'Firebase', color: BRAND_COLORS.firebase },
-    { icon: SiVercel, name: 'Vercel', color: BRAND_COLORS.vercel },
-    { icon: SiNotion, name: 'Notion', color: BRAND_COLORS.notion },
-    { icon: SiPostman, name: 'Postman', color: BRAND_COLORS.postman },
+    {
+      text: 'GitHub',
+      icon: <SiGithub className={USED_ICON_CLASS} style={{ color: 'var(--github)' }} />,
+    },
+    {
+      text: 'Vercel',
+      icon: <SiVercel className={USED_ICON_CLASS} style={{ color: 'var(--vercel)' }} />,
+    },
+    {
+      text: 'Notion',
+      icon: <SiNotion className={USED_ICON_CLASS} style={{ color: 'var(--notion)' }} />,
+    },
   ],
 };
