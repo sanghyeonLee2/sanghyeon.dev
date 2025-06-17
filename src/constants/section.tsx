@@ -20,7 +20,7 @@ export const PROFILE_OPTIONS: LinkType[] = [
   {
     text: 'https://github.com/sanghyeonLee2',
     icon: <FaGithub className={ICON_CLASS} />,
-    href: 'https://github.com/sanghyeonLee',
+    href: 'https://github.com/sanghyeonLee2',
   },
   {
     text: 'https://sanghyeon-blog.vercel.app',
