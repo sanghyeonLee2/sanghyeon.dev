@@ -2,12 +2,15 @@
 
 import React from 'react';
 import { MotionContainer, MotionItem } from '@/components/common/motion';
-import introImg from '@/assets/introImg.jpg';
+import introImg from '@/assets/introImg.webp';
 import { useNextTheme } from '@/hooks/useNextTheme';
-const INTRO_TEXT = 'LEE SANG HYEON PORTFOLIO';
-const INTRODUCE = '안녕하세요. 프론트엔드 개발자를 꿈꾸는 이상현 입니다.';
 import { FaRegCircleDown } from 'react-icons/fa6';
 import ALink from '@/components/common/Link/ALink';
+
+const INTRO_CONTENTS: { title: string; introduce: string } = {
+  title: 'LEE SANG HYEON PORTFOLIO',
+  introduce: '안녕하세요. 프론트엔드 개발자를 꿈꾸는 이상현 입니다.',
+};
 
 const Intro = () => {
   const { currentTheme } = useNextTheme();
@@ -24,16 +27,16 @@ const Intro = () => {
       <div className="flex-center">
         <div className="text-center">
           <MotionItem as="h1" className="mb-3">
-            {INTRO_TEXT}
+            {INTRO_CONTENTS.title}
           </MotionItem>
           <MotionItem as="p" className="text-black break-keep dark:text-[var(--color-text)]">
-            {INTRODUCE}
+            {INTRO_CONTENTS.introduce}
           </MotionItem>
         </div>
       </div>
       <ALink
         icon={
-          <FaRegCircleDown className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-[1.6rem] z-20" />
+          <FaRegCircleDown className="absolute bottom-7 left-1/2 -translate-x-1/2 animate-bounce text-[1.6rem] z-20" />
         }
         href="#about"
       />
