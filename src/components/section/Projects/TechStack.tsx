@@ -1,17 +1,16 @@
 import { MotionItem } from '@/components/common/motion';
-import { TechStackType } from '@/components/section/Projects/projects.type';
 import React from 'react';
 
-const TechStack = ({ techStack }: { techStack: TechStackType[] }) => {
+const TechStack = ({ techStack }: { techStack: string[] }) => {
   return (
-    <MotionItem as="div" className="flex gap-2 flex-wrap py-content">
+    <MotionItem as="div" className="flex gap-2 flex-wrap pt-3 pb-5">
       {techStack.map((tech) => (
         <span
-          key={tech.name}
-          style={{ backgroundColor: `${tech.color}CC` }}
-          className={`text-sm px-2 py-0.5 rounded text-white`}
+          key={tech}
+          style={{ backgroundColor: `var(--${tech})`, color: `var(--${tech}-text)` }}
+          className={`shadow-[var(--shadow)] dark:border-gray-600 border border-transparent font-medium text-[0.75rem] md:text-sm px-2 py-0.5 rounded`}
         >
-          {tech.name}
+          {tech}
         </span>
       ))}
     </MotionItem>
