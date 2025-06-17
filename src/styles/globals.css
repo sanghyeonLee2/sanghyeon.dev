@@ -34,12 +34,12 @@
   }
   .swiper-button-prev,
   .swiper-button-next {
-    @apply transition hover:scale-120 bg-[var(--color-primary)]/45 rounded;
+    @apply transition hover:scale-125 bg-[var(--color-primary)]/45 rounded;
   }
   .swiper-button-prev::after,
   .swiper-button-next::after {
     font-weight: 1000;
-    font-size: 1.1rem !important;
+    font-size: 1.5rem !important;
     color: #6366f1 !important;
   }
 
