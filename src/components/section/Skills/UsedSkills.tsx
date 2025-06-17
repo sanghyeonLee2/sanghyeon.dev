@@ -8,14 +8,14 @@ const UsedSkills = () => {
     <MotionContainer as="div" amount={0.2}>
       <Subheading text={USED_SKILL.subheading} />
       <ul className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 gap-4">
-        {USED_SKILL.skills.map(({ icon: Icon, name, color }) => (
+        {USED_SKILL.skills.map(({ icon, text }) => (
           <MotionItem
             as="li"
-            key={name}
-            className="flex-center flex-col transition-transform duration-200 hover:-translate-y-1 cursor-pointer p-content rounded-xl bg-[var(--color-btn-bg)] shadow-[var(--shadow)]"
+            key={text}
+            className="flex-center flex-col transition-transform gap-2 duration-200 hover:-translate-y-1 cursor-pointer p-content rounded-xl bg-[var(--color-btn-bg)] shadow-[var(--shadow)]"
           >
-            <Icon className="w-10 h-10 mb-2" style={{ color }} />
-            <span className="text-sm">{name}</span>
+            {icon}
+            <span className="text-sm">{text}</span>
           </MotionItem>
         ))}
       </ul>
