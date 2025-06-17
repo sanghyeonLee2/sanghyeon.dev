@@ -8,13 +8,17 @@ export type ProjectsType = {
     period: string;
     title: string;
     imgs: StaticImageData[];
-    techStack: TechStackType[];
+    techStack: string[];
     details: string[];
     description: string;
-    linksOptions: LinkType[];
+    linksOption: LinkOptionsType;
   }[];
 };
 
+export interface LinkOptionsType {
+  subheading: string;
+  contents: LinkType[];
+}
 export interface TechStackType {
   color: string;
   name: string;
