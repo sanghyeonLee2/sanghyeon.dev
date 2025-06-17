@@ -6,7 +6,7 @@
     @apply bg-[var(--color-bg)]/90 dark:bg-[var(--color-bg)]/90;
   }
   .button-hover {
-    @apply hover:bg-gray-200 dark:hover:bg-gray-600;
+    @apply hover:bg-[var(--color-primary)]/70;
   }
   .flex-center-between {
     @apply flex items-center justify-between;
