@@ -1,11 +1,12 @@
 'use client';
 
-import About from '@/components/section/About/About';
+import About from '@/components/section/About';
 import Experience from '@/components/section/Experience/Experience';
 import Intro from '@/components/section/Intro';
 import Layout from '@/components/section/Layout';
 import Projects from '@/components/section/Projects/Projects';
 import Skills from '@/components/section/Skills/Skills';
+import Thanks from '@/components/section/Skills/Thanks';
 
 const sections: { id: string; Component: React.FC }[] = [
   { id: 'intro', Component: Intro },
@@ -13,6 +14,7 @@ const sections: { id: string; Component: React.FC }[] = [
   { id: 'projects', Component: Projects },
   { id: 'skills', Component: Skills },
   { id: 'experience', Component: Experience },
+  { id: 'thanks', Component: Thanks },
 ];
 export default function Home() {
   return (
