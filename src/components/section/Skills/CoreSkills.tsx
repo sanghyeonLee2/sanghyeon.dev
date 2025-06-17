@@ -9,16 +9,16 @@ const CoreSkills = () => {
     <MotionContainer as="div" amount={0.13}>
       <Subheading text={CORE_SKILL.subheading} />
       <ul className="flex flex-col gap-5 mb-10">
-        {CORE_SKILL.skills.map(({ icon: Icon, name, descriptions, color }) => (
+        {CORE_SKILL.skills.map(({ icon, text, descriptions }) => (
           <MotionItem
             as="li"
-            key={name}
+            key={text}
             className="p-5 rounded-xl shadow-md bg-[var(--color-sub-bg)]"
           >
             <article>
               <div className="flex items-center gap-3 mb-3">
-                <Icon className="w-12 h-12" style={{ color }} />
-                <p className="text-2xl">{name}</p>
+                {icon}
+                <p className="text-[1.4rem] md:text-2xl">{text}</p>
               </div>
               <TextList textList={descriptions as string[]} />
             </article>
