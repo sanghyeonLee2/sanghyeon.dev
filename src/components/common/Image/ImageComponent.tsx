@@ -6,8 +6,9 @@ interface ImageProps {
   src: string | StaticImageData;
   className?: string;
   alt: string;
+  priority?: boolean;
 }
-const ImageComponent = ({ src, className, alt }: ImageProps) => {
+const ImageComponent = ({ src, className, alt, priority = false }: ImageProps) => {
   return (
     <div className={clsx('relative overflow-hidden ', className)}>
       <Image
@@ -16,10 +17,10 @@ const ImageComponent = ({ src, className, alt }: ImageProps) => {
         fill
         sizes="(max-width: 768px) 100vw, 50vw"
         className="object-cover"
-        priority
+        priority={priority}
       />
     </div>
   );
 };
 
-export default React.memo(ImageComponent);
+export default ImageComponent;
