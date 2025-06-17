@@ -23,12 +23,13 @@ const ImageSlider = ({ imgs }: { imgs: StaticImageData[] }) => {
         }}
         className="w-full h-70"
       >
-        {imgs.map((img) => (
+        {imgs.map((img, idx) => (
           <SwiperSlide key={img.src}>
             <ImageComponent
               src={img}
               alt={`슬라이드 ${img.src}`}
               className="shadow-[var(--shadow)] rounded-lg h-full"
+              priority={idx < 2}
             />
           </SwiperSlide>
         ))}
