@@ -1,11 +1,82 @@
 :root {
   --color-bg: #f8f9fa;
-  --intro-bg: linear-gradient(180deg, rgba(255, 255, 255, 0.4), rgba(200, 200, 200, 0.44));
+  --intro-bg: linear-gradient(
+    180deg,
+    rgba(234, 235, 235, 0.675) 0%,
+    rgba(204, 205, 205, 0.62) 100%
+  );
   --color-sub-bg: #f3f4f6;
   --color-btn-bg: #f8f9fa;
   --color-text: #374151;
-  --color-primary: #7c83fd; /* F5A623: 주황, 7C83FD 퍼플 */
+  --color-primary: #7c83fd;
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 2px 4px rgba(0, 0, 0, 0.06);
+
+  /* 브랜드 색상 (배경 + 텍스트) */
+  --react: #61dafb;
+  --react-text: #000;
+
+  --tailwind: #38bdf8;
+  --tailwind-text: #000;
+
+  --github: #181717;
+  --github-text: #fff;
+
+  --typescript: #3178c6;
+  --typescript-text: #fff;
+
+  --vercel: #000000;
+  --vercel-text: #fff;
+
+  --notion: #000000;
+  --notion-text: #fff;
+
+  --next: #000000;
+  --next-text: #fff;
+
+  --javascript: #f7df1e;
+  --javascript-text: #000;
+
+  --styled-components: #db7093;
+  --styled-components-text: #fff;
+
+  --axios: #764abc;
+  --axios-text: #fff;
+
+  --recoil: #007aff;
+  --recoil-text: #fff;
+
+  --node: #68a063;
+  --node-text: #fff;
+
+  --express: #333333;
+  --express-text: #fff;
+
+  --sequelize: #3aafc5;
+  --sequelize-text: #fff;
+
+  --mysql: #00758f;
+  --mysql-text: #fff;
+
+  --flask: #000000;
+  --flask-text: #fff;
+
+  --kobert: #1f77b4;
+  --kobert-text: #fff;
+
+  --huggingface: #ffcc00;
+  --huggingface-text: #000;
+
+  --chrome-extension: #f28b00;
+  --chrome-extension-text: #000;
+
+  --react-query: #ff4154;
+  --react-query-text: #fff;
+
+  --aws: #ff9900;
+  --aws-text: #000;
+
+  --kakao: #fee500;
+  --kakao-text: #000;
 }
 
 html.dark {
@@ -16,4 +87,92 @@ html.dark {
   --color-text: #e2e8f0;
   --color-primary: #7c83fd;
   --shadow: none;
+
+  /* 브랜드 컬러 - 투명도 추가 */
+  --react: #61dafbcc;
+  --tailwind: #38bdf8cc;
+  --typescript: #3178c6cc;
+  --vercel: #000000cc;
+  --notion: #000000cc;
+  --next: #000000cc;
+  --javascript: #f7df1ecc;
+  --styled-components: #db7093cc;
+  --axios: #764abccc;
+  --recoil: #007affcc;
+  --node: #68a063cc;
+  --express: #333333cc;
+  --sequelize: #3aafc5cc;
+  --mysql: #00758fcc;
+  --flask: #000000cc;
+  --kobert: #1f77b4cc;
+  --huggingface: #ffcc00cc;
+  --chrome-extension: #f28b00cc;
+  --react-query: #ff4154cc;
+  --aws: #ff9900cc;
+  --kakao: #fee500cc;
+  --react: #61dafbcc;
+  --react-text: #000;
+
+  --tailwind: #38bdf8cc;
+  --tailwind-text: #000;
+
+  --typescript: #3178c6cc;
+  --typescript-text: #fff;
+
+  --vercel: #000000cc;
+  --vercel-text: #fff;
+
+  --notion: #000000cc;
+  --notion-text: #fff;
+
+  --next: #000000cc;
+  --next-text: #fff;
+
+  --javascript: #f7df1ecc;
+  --javascript-text: #000;
+
+  --styled-components: #db7093cc;
+  --styled-components-text: #fff;
+
+  --axios: #764abccc;
+  --axios-text: #fff;
+
+  --recoil: #007affcc;
+  --recoil-text: #fff;
+
+  --node: #68a063cc;
+  --node-text: #fff;
+
+  --express: #333333cc;
+  --express-text: #fff;
+
+  --sequelize: #3aafc5cc;
+  --sequelize-text: #fff;
+
+  --mysql: #00758fcc;
+  --mysql-text: #fff;
+
+  --flask: #000000cc;
+  --flask-text: #fff;
+
+  --kobert: #1f77b4cc;
+  --kobert-text: #fff;
+
+  --huggingface: #ffcc00cc;
+  --huggingface-text: #000;
+
+  --chrome-extension: #f28b00cc;
+  --chrome-extension-text: #000;
+
+  --react-query: #ff4154cc;
+  --react-query-text: #fff;
+
+  --github: #181717;
+  --github-text: #fff;
+
+  --aws: #ff9900cc;
+  --aws-text: #000;
+
+  --kakao: #fee500cc;
+  --kakao-text: #000;
 }
