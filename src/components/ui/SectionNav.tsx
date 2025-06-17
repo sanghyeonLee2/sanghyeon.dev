@@ -2,9 +2,9 @@
 
 import React from 'react';
 import clsx from 'clsx';
-import { SECTIONS } from '@/constants/section';
 import ALink from '@/components/common/Link/ALink';
 import { useActiveSectionNav } from '@/hooks/useActiveSectionNav';
+import { SECTIONS } from '@/constants/section';
 
 const SectionNav = ({ className }: { className?: string }) => {
   const activeId = useActiveSectionNav();

@@ -1,5 +1,5 @@
 import type { StaticImageData } from 'next/image';
-import { LinkType } from '@/common/types';
+import { LinkType } from '@/types/types';
 
 export type ProjectsType = {
   subheading: string;

@@ -1,6 +1,6 @@
 import ALink from '@/components/common/Link/ALink';
 import React from 'react';
-import { BLANK_LINK } from '@/constants/common';
+import { BLANK_LINK } from '@/constants/dom';
 import Subheading from '@/components/common/Subheading/Subheading';
 import { LinkOptionsType } from '@/components/section/Projects/projects.type';
 import { MotionItem } from '@/components/common/motion';
@@ -13,7 +13,7 @@ const LinkOptions = ({ linksOption }: { linksOption: LinkOptionsType }) => {
         {linksOption.contents.map((option) => (
           <li
             key={option.href}
-            className="shadow-[var(--shadow)] rounded border-[0.05rem] border-gray-300  dark:border-none bg-[var(--color-btn-bg)] hover:bg-[var(--color-primary)]/70 transition-colors duration-300"
+            className="shadow-[var(--shadow)] rounded border-[0.05rem] border-gray-300 dark:border-transparent bg-[var(--color-btn-bg)] hover:bg-[var(--color-primary)]/70 transition-colors duration-300"
           >
             <ALink
               className="flex gap-2.5 flex-center font-semibold text-[1rem] sm:text-[1.1rem] text-inherit py-3 px-3"

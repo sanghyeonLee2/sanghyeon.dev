@@ -1,4 +1,4 @@
-import { LinkType } from '@/common/types';
+import { LinkType } from '@/types/types';
 
 export type SkillType = {
   subheading: string;
