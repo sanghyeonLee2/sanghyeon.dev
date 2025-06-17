@@ -2,13 +2,14 @@ import { MotionContainer, MotionItem } from '@/components/common/motion';
 import Subheading from '@/components/common/Subheading/Subheading';
 import TextList from '@/components/common/TextList/TextList';
 import { ExperienceType } from '@/components/section/Experience/experience.type';
+import clsx from 'clsx';
 import React from 'react';
 
-const ExperienceList = ({ contents, subheading }: ExperienceType) => {
+const ExperienceList = ({ contents, subheading, isLast = false }: ExperienceType) => {
   return (
     <MotionContainer as="div" amount={0.25}>
       <Subheading text={subheading} />
-      <ul className="divide-y divide-gray-300 mb-10">
+      <ul className={clsx('divide-y divide-gray-300', !isLast && 'mb-10')}>
         {contents.map((content) => (
           <li key={content.name}>
             <MotionItem as="article" className="flex flex-col md:flex-row gap-6 py-8 px-3">

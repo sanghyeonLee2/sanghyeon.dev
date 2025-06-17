@@ -5,4 +5,5 @@ export interface ExperienceType {
     period: string;
     summaries: string[];
   }[];
+  isLast?: boolean;
 }

@@ -10,6 +10,7 @@ const Experience = () => {
           key={experience.subheading}
           contents={experience.contents}
           subheading={experience.subheading}
+          isLast={experience === EXPERIENCES.at(-1)}
         />
       ))}
     </>
