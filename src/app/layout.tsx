@@ -1,4 +1,3 @@
-import { CONFIG } from '@/constants/config';
 import '@/styles/globals.css';
 import { pretendard } from '@/fonts/fonts';
 import Header from '@/components/ui/Header';
@@ -10,7 +9,7 @@ export const metadata = defaultMetadata;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang={CONFIG.DEFAULT_LANGUAGE} className={pretendard.variable} suppressHydrationWarning>
+    <html lang={'ko'} className={pretendard.variable} suppressHydrationWarning>
       <body className={`${pretendard.className} layout-wrapper`}>
         <ThemeProvider>
           <Header />
