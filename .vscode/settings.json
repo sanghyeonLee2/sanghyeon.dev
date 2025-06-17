@@ -35,5 +35,24 @@
     "javascriptreact": "html"
   },
   "tailwindCSS.experimental.classRegex": ["clsx\\(([^)]*)\\)", "cn\\(([^)]*)\\)"],
-  "jest.runMode": "on-demand"
+  "jest.runMode": "on-demand",
+  "cSpell.words": [
+    "sanghyeon",
+    "Pretendard",
+    "clsx",
+    "rgba",
+    "opengraph",
+    "vercel",
+    "axios",
+    "sequelize",
+    "kobert",
+    "huggingface",
+    "kakao",
+    "Ssurround",
+    "SQLD",
+    "Nextdotjs",
+    "noopener",
+    "noreferrer",
+    "hyeon"
+  ]
 }
