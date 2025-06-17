@@ -1,11 +1,8 @@
-import { IconType } from 'react-icons';
+import { LinkType } from '@/common/types';
 
 export type SkillType = {
   subheading: string;
-  skills: {
-    name: string;
-    icon: IconType;
-    color: string;
+  skills: ({
     descriptions?: string[];
-  }[];
+  } & LinkType)[];
 };
