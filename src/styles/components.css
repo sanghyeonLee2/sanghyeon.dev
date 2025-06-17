@@ -3,7 +3,7 @@
     font-family: 'Cafe24Ssurround', sans-serif;
   }
   .header-bg {
-    /*@apply bg-[#f8f9fa]/90 dark:bg-[#13161c]/80;*/
+    @apply bg-[var(--color-bg)]/90 dark:bg-[var(--color-bg)]/90;
   }
   .button-hover {
     @apply hover:bg-gray-200 dark:hover:bg-gray-600;
