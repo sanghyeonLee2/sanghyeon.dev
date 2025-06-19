@@ -8,8 +8,8 @@ import { MotionContainer, MotionItem } from '@/components/common/motion';
 import { BLANK_LINK } from '@/constants/dom';
 import { PROFILE_OPTIONS } from '@/constants/section';
 
-const INTRODUCE: string =
-  '안녕하세요, 사용자 경험을 중요하게 생각하는 프론트엔드 개발자 이상현입니다. React, Next.js,Tailwind CSS를 중심으로 구조적이고 유지보수 가능한 UI 개발에 강점을 가지고 있으며, 최근에는성능 최적화와 다크모드/반응형 UI 구현에 집중하고 있습니다. 협업과 커뮤니케이션을 중시하며,함께 성장하는 개발자를 지향합니다.';
+const INTRODUCE =
+  '맨땅에 헤딩하듯 시작한 첫 개발 경험부터 반복작업 속 효율성을 고민한 프로젝트 경험까지, 저는 끈질기게 몰입하며 성장해왔습니다. 다양한 프로젝트를 통해 프론트엔드뿐 아니라 백엔드, 크롤링, AI 모델 개발까지 폭넓게 경험했으며, 단순한 구현을 넘어 재사용성과 유지보수성을 고려한 구조적인 개발을 지향하고 있습니다.';
 
 const About = () => {
   return (
