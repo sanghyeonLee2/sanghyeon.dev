@@ -13,7 +13,7 @@ const ExperienceList = ({ contents, subheading, isLast = false }: ExperienceType
         {contents.map((content) => (
           <li key={content.name}>
             <MotionItem as="article" className="flex flex-col md:flex-row gap-6 py-8 px-3">
-              <div className="flex-col md:w-70 flex-shrink-0">
+              <div className="flex-col md:w-70 flex-shrink-0 content-center">
                 <p className="text-xl md:text-2xl content-center text-center">{content.name}</p>
                 <p className="text-sm text-gray-400 text-center">{content.period}</p>
               </div>
