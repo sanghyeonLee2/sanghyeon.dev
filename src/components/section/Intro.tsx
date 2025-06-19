@@ -8,8 +8,8 @@ import { FaRegCircleDown } from 'react-icons/fa6';
 import ALink from '@/components/common/Link/ALink';
 
 const INTRO_CONTENTS: { title: string; introduce: string } = {
-  title: 'LEE SANG HYEON PORTFOLIO',
-  introduce: '안녕하세요. 프론트엔드 개발자를 꿈꾸는 이상현 입니다.',
+  title: 'FRONTEND PORTFOLIO',
+  introduce: '효율적인 구조를 지향하는 프론트엔드 개발자 이상현입니다.',
 };
 
 const Intro = () => {
