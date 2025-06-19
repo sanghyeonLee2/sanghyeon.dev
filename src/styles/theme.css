@@ -77,6 +77,18 @@
 
   --kakao: #fee500;
   --kakao-text: #000;
+
+  --react-hook-form: #ec5990;
+
+  --zustand: #000000;
+  --pytorch: #ee4c2c;
+  --react-native: #61dafb;
+  --beautifulsoup: #f47944;
+  --selenium: #43b02a;
+  --c: #a8b9cc;
+  --git: #f05032;
+  --esbuild: #ffcf00;
+  --python: #3776ab;
 }
 
 html.dark {
@@ -175,4 +187,16 @@ html.dark {
 
   --kakao: #fee500cc;
   --kakao-text: #000;
+
+  --react-hook-form: #ec5990cc;
+
+  --zustand: #000000cc;
+  --pytorch: #ee4c2ccc;
+  --react-native: #61dafbcc;
+  --beautifulsoup: #f47944cc;
+  --selenium: #43b02acc;
+  --c: #a8b9cccc;
+  --git: #f05032cc;
+  --esbuild: #ffcf00cc;
+  --python: #3776abcc;
 }
