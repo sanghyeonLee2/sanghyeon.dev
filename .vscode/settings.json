@@ -53,6 +53,11 @@
     "Nextdotjs",
     "noopener",
     "noreferrer",
-    "hyeon"
+    "hyeon",
+    "Kdata",
+    "nodedotjs",
+    "zustand",
+    "beautifulSoup",
+    "esbuild"
   ]
 }
