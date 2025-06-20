@@ -72,6 +72,18 @@
   --react-query: #ff4154;
   --react-query-text: #fff;
 
+  --framer-motion: #e95c84;
+  --framer-motion-text: #fff;
+
+  --next-themes: #000000;
+  --next-themes-text: #fff;
+
+  --swiper: #6332f6;
+  --swiper-text: #fff;
+
+  --cloudfront: #f26b38;
+  --cloudfront-text: #fff;
+
   --aws: #ff9900;
   --aws-text: #000;
 
@@ -187,6 +199,18 @@ html.dark {
 
   --kakao: #fee500cc;
   --kakao-text: #000;
+
+  --framer-motion: #e95c84cc;
+  --framer-motion-text: #fff;
+
+  --next-themes: #000000cc;
+  --next-themes-text: #fff;
+
+  --swiper: #6332f6cc;
+  --swiper-text: #fff;
+
+  --cloudfront: #f26b38cc;
+  --cloudfront-text: #fff;
 
   --react-hook-form: #ec5990cc;
 
