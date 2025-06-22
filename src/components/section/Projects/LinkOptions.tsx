@@ -3,7 +3,7 @@ import React from 'react';
 import { BLANK_LINK } from '@/constants/dom';
 import Subheading from '@/components/common/Subheading/Subheading';
 import { LinkOptionsType } from '@/components/section/Projects/projects.type';
-import { MotionItem } from '@/components/common/motion';
+import { MotionItem } from '@/components/common/Motion';
 
 const LinkOptions = ({ linksOption }: { linksOption: LinkOptionsType }) => {
   return (

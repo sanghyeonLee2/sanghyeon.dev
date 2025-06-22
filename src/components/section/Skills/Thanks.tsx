@@ -1,8 +1,8 @@
 'use client';
 
-import { MotionContainer } from '@/components/common/motion';
+import { MotionContainer } from '@/components/common/Motion';
 import React from 'react';
-import MotionItem from './../../common/motion/MotionItem';
+import MotionItem from '../../common/Motion/MotionItem';
 import Subheading from '@/components/common/Subheading/Subheading';
 
 const THANKS_CONTENTS: { subheading: string; text: string } = {

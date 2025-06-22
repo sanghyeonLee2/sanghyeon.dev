@@ -1,4 +1,4 @@
-import { MotionItem } from '@/components/common/motion';
+import { MotionItem } from '@/components/common/Motion';
 import React from 'react';
 
 const TechStack = ({ techStack }: { techStack: string[] }) => {
