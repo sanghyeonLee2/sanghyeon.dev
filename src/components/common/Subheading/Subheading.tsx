@@ -1,5 +1,5 @@
 import React from 'react';
-import { MotionItem } from '@/components/common/motion';
+import { MotionItem } from '@/components/common/Motion';
 
 const Subheading = ({ text }: { text: string }) => {
   return (
