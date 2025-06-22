@@ -17,7 +17,7 @@ export default function Header() {
   return (
     <header
       className={clsx(
-        'fixed top-0 left-0 right-0 w-full z-50 h-18 duration-200 ease-in',
+        'fixed top-0 left-0 right-0 w-full z-20 h-18 duration-200 ease-in',
         scrolled ? 'header-bg' : 'bg-transparent',
       )}
     >
