@@ -91,6 +91,10 @@
   --kakao-text: #000;
 
   --react-hook-form: #ec5990;
+  --react-hook-form-text: #fff;
+
+  --json-server: #e74c3c;
+  --json-server-text: #fff;
 
   --zustand: #000000;
   --pytorch: #ee4c2c;
@@ -213,6 +217,10 @@ html.dark {
   --cloudfront-text: #fff;
 
   --react-hook-form: #ec5990cc;
+  --react-hook-form-text: #fff;
+
+  --json-server: #e74c3ccc;
+  --json-server-text: #fff;
 
   --zustand: #000000cc;
   --pytorch: #ee4c2ccc;
