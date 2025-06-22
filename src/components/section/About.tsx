@@ -4,7 +4,7 @@ import ImageComponent from '@/components/common/Image/ImageComponent';
 import React from 'react';
 import example from '@/assets/example.png';
 import ALink from '@/components/common/Link/ALink';
-import { MotionContainer, MotionItem } from '@/components/common/motion';
+import { MotionContainer, MotionItem } from '@/components/common/Motion';
 import { BLANK_LINK } from '@/constants/dom';
 import { PROFILE_OPTIONS } from '@/constants/section';
 
@@ -18,7 +18,7 @@ const About = () => {
         <ImageComponent
           src={example}
           alt="증명사진"
-          className="w-60 h-60 flex-shrink-0 rounded-3xl"
+          className="w-60 h-60 flex-shrink-0 rounded-xl"
         />
         <div className="flex-1 flex flex-col text-center sm:text-left gap-3">
           <p className="font-extrabold text-3xl">이상현</p>
