@@ -5,6 +5,7 @@ export type ProjectsType = {
   subheading: string;
   contents: {
     key: number;
+    personnel: string;
     period: string;
     title: string;
     imgs: StaticImageData[];
