@@ -1,12 +1,17 @@
+'use client';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import ImageComponent from '@/components/common/Image/ImageComponent';
 import { StaticImageData } from 'next/image';
-import { MotionItem } from '@/components/common/motion';
+import { MotionItem } from '@/components/common/Motion';
+import Button from '@/components/common/Button/Button';
+import { useModalStore } from '@/store/useModalStore';
 
 const ImageSlider = ({ imgs }: { imgs: StaticImageData[] }) => {
+  const { open } = useModalStore();
   return (
     <MotionItem as="div">
       <Swiper
@@ -25,12 +30,18 @@ const ImageSlider = ({ imgs }: { imgs: StaticImageData[] }) => {
       >
         {imgs.map((img, idx) => (
           <SwiperSlide key={img.src}>
-            <ImageComponent
-              src={img}
-              alt={`슬라이드 ${img.src}`}
-              className="shadow-[var(--shadow)] rounded-lg h-full"
-              priority={idx < 2}
-            />
+            <Button
+              onClick={() => open(img)}
+              className="rounded h-full w-full flex-center bg-black/60"
+            >
+              <ImageComponent
+                src={img}
+                alt={`슬라이드 ${img.src}`}
+                className="h-full w-full max-w-full max-h-full"
+                imgClassName="object-contain transition-transform duration-200 hover:scale-110"
+                priority={idx < 2}
+              />
+            </Button>
           </SwiperSlide>
         ))}
       </Swiper>
