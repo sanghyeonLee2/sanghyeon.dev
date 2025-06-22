@@ -1,4 +1,4 @@
-import { MotionContainer, MotionItem } from '@/components/common/motion';
+import { MotionContainer, MotionItem } from '@/components/common/Motion';
 import Subheading from '@/components/common/Subheading/Subheading';
 import TextList from '@/components/common/TextList/TextList';
 import { ExperienceType } from '@/components/section/Experience/experience.type';
