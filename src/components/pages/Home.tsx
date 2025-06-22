@@ -18,7 +18,7 @@ const sections: { id: string; Component: React.FC }[] = [
 ];
 export default function Home() {
   return (
-    <main className="flex-1 layout-wrap-max-w w-full px-content mx-auto mb-20 z-40">
+    <main className="flex-1 layout-wrap-max-w w-full px-content mx-auto mb-20 z-10">
       {sections.map(({ id, Component }) => (
         <Layout key={id} sectionId={id}>
           <Component />
