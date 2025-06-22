@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { MotionContainer, MotionItem } from '@/components/common/motion';
+import { MotionContainer, MotionItem } from '@/components/common/Motion';
 import introImg from '@/assets/introImg.webp';
 import { useNextTheme } from '@/hooks/useNextTheme';
 import { FaRegCircleDown } from 'react-icons/fa6';
