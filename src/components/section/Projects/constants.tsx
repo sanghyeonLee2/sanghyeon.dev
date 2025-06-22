@@ -1,5 +1,17 @@
 import exampleImage from '@/assets/example.png';
-import exampleImage_1 from '@/assets/example_1.png';
+import portfolio1 from '@/assets/portfolio-1.png';
+import godOfDelivery1 from '@/assets/god-of-delivery-1.png';
+import godOfDelivery2 from '@/assets/god-of-delivery-2.png';
+import godOfDelivery3 from '@/assets/god-of-delivery-3.png';
+import godOfDelivery4 from '@/assets/god-of-delivery-4.png';
+import godOfDelivery5 from '@/assets/god-of-delivery-5.png';
+import godOfDelivery6 from '@/assets/god-of-delivery-6.png';
+import godOfDelivery7 from '@/assets/god-of-delivery-7.png';
+import godOfDelivery8 from '@/assets/god-of-delivery-8.png';
+import godOfDelivery9 from '@/assets/god-of-delivery-9.png';
+import godOfDelivery10 from '@/assets/god-of-delivery-10.png';
+import godOfDelivery11 from '@/assets/god-of-delivery-11.png';
+
 import exampleImage_2 from '@/assets/example_2.png';
 import { ProjectsType } from '@/components/section/Projects/projects.type';
 import { FaGithub } from 'react-icons/fa';
@@ -13,21 +25,22 @@ export const PROJECT: ProjectsType = {
     {
       key: 1,
       title: 'sanghyeon-blog',
+      personnel: '1인 개발',
       period: '2025-05-05 ~ 2025-05-26',
       imgs: [exampleImage],
       techStack: ['react', 'tailwind', 'typescript', 'vercel', 'notion'],
       description: 'Notion을 Headless CMS로 활용하여 구축한 Next.js 기반의 개인 블로그입니다.',
       details: [
-        'Next, Tailwind 기반 개인 보일러 플레이트 개발 및 이를 활용해 초기 세팅을 진행했습니다.',
-        '아토믹 디자인을 통해 재사용성 높은 디렉토리 구조를 설계하였습니다.',
-        'next-themes 기반으로 CSS 변수와 Tailwind class 전략 모두를 지원하는 커스텀 드롭다운 다크모드 기능을 구현했습니다.',
-        'SSG 기반 정적 페이지 생성을 통해 초기 로딩 속도와 SEO를 최적화했습니다.',
-        'generateStaticParams를 활용해 빌드시 블로그 게시글 html을 미리 생성했습니다.',
-        'notion-client API, react-notion-x API를 활용하여 Notion DB 게시글 목록 및 단일 게시글 데이터 패칭 및 캐싱을 구현했습니다.',
-        '단일 게시글 페이지의 이미지 로드 타이밍에 스켈레톤 이미지를 사용하여 사전 공간 확보 및 CLS 개선을 시도했습니다.',
-        '클라이언트 컴포넌트에 react.memo, useCallback을 적용해 성능 최적화를 진행했습니다.',
-        'Vercel 기반 배포 환경 구성과 GitHub push 시 자동 반영되는 CI/CD 파이프라인을 설정했습니다.',
+        'Next.js, Tailwind 기반 개인 보일러플레이트 개발 및 초기 세팅 적용',
+        'next-themes와 CSS 변수, Tailwind 유틸리티 클래스를 활용한 커스텀 다크모드 드롭다운 구현',
+        'SSG를 활용한 정적 페이지 생성으로 초기 로딩 속도 및 SEO 최적화',
+        'generateStaticParams를 통해 블로그 게시글의 HTML을 빌드 시점에 사전 생성',
+        'notion-client, react-notion-x로 Notion DB 글 목록 및 상세 데이터 패칭/캐싱 처리',
+        '이미지 스켈레톤 적용으로 CLS 개선 및 시각적 안정성 확보',
+        'react.memo, useCallback을 적용해 클라이언트 컴포넌트 렌더링 성능 최적화',
+        'Vercel + GitHub 기반 자동 배포 파이프라인 구축',
       ],
+
       linksOption: {
         subheading: '🔗 관련링크',
         contents: [
@@ -47,27 +60,23 @@ export const PROJECT: ProjectsType = {
     {
       key: 2,
       title: '개인 포트폴리오 사이트',
+      personnel: '1인 개발',
       period: '2025-06-05 ~ 2025-06-18',
-      imgs: [exampleImage],
-      techStack: ['next', 'typescript', 'vercel'],
-      description: '동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세...',
+      imgs: [portfolio1],
+      techStack: ['next', 'typescript', 'vercel', 'framer-motion', 'next-themes', 'swiper'],
+      description:
+        'Next.js, Tailwind CSS, TypeScript 기반으로 제작한 포트폴리오 웹사이트이며, 다크 모드, 반응형 레이아웃, 애니메이션 기능을 적용했습니다.',
       details: [
-        'Vercel에 블로그를 배포한 포트폴리오 프로젝트입니다.',
-        'Next.js의 정적 생성(SSG)과 동적 경로 처리를 학습했습니다.',
-        '마크다운 기반 블로그 글 렌더링 처리 구조를 구현했습니다.',
+        'framer-motion 기반 재사용 가능한 컴포넌트 MotionContainer, MotionItem를 구현해 태그 동적 지정 및 등장 시점 제어가 가능한 애니메이션 구조 설계',
+        'Tailwind CSS와 CSS 변수로 브랜드 컬러 관리, 반응형·테마 대응 UI/UX 설계',
       ],
       linksOption: {
         subheading: '🔗 관련링크',
         contents: [
           {
-            text: 'GitHub',
-            icon: <FaGithub className={LINK_ICON_CLASS} style={{ color: 'var(--github)' }} />,
-            href: 'https://github.com/sanghyeonLee',
-          },
-          {
-            text: 'Vercel',
+            text: '배포',
             icon: <IoLogoVercel className={LINK_ICON_CLASS} style={{ color: 'var(--vercel)' }} />,
-            href: 'https://sanghyeon-blog.vercel.app',
+            href: 'https://sanghyeon-dev.vercel.app',
           },
         ],
       },
@@ -75,19 +84,36 @@ export const PROJECT: ProjectsType = {
     {
       key: 3,
       title: '배달의 신 (God of Delivery)',
-      period: '2023-08-01 ~ 2023-09-30',
-      imgs: [exampleImage],
+      personnel: '2인 개발 (FE 1명, BE 1명)',
+      period: '2023-08-01 ~ 2024-12-30',
+      imgs: [
+        godOfDelivery1,
+        godOfDelivery2,
+        godOfDelivery3,
+        godOfDelivery4,
+        godOfDelivery5,
+        godOfDelivery6,
+        godOfDelivery7,
+        godOfDelivery8,
+        godOfDelivery9,
+        godOfDelivery10,
+        godOfDelivery11,
+      ],
       techStack: [
         'react',
         'javascript',
         'recoil',
         'react-query',
+        'react-hook-form',
+        'axios',
+        'json-server',
         'styled-components',
         'aws',
         'cloudfront',
         'kakao',
       ],
-      description: 'React 기반 배달 서비스 웹 애플리케이션으로, 2인 협업 프로젝트입니다.',
+      description:
+        '"배달의민족"과 "요기요"의 배달 서비스 모델을 참고하여 제작한 React 기반 웹 애플리케이션으로, 백엔드 개발자 1명과 함께한 2인 협업 프로젝트입니다.',
       details: [
         'react-router-dom으로 유저/사장/인증 페이지의 역할 기반 접근 제어 및 중첩 라우팅 구현',
         '커스텀 훅, 유틸 함수, API 모듈 등 관심사 기반 코드 분리로 UI와 비즈니스 로직 구분',
@@ -121,6 +147,7 @@ export const PROJECT: ProjectsType = {
     {
       key: 4,
       title: '광고 리뷰 판별 크롬 확장 프로그램',
+      personnel: '1인 개발',
       period: '2024-03-01 ~ 2024-06-01',
       imgs: [exampleImage],
       techStack: [
@@ -156,7 +183,8 @@ export const PROJECT: ProjectsType = {
       key: 5,
       title: '커피 판매 시스템',
       period: '2023-06-01 ~ 2023-06-30',
-      imgs: [exampleImage, exampleImage_1, exampleImage_2],
+      personnel: '1인 개발',
+      imgs: [exampleImage, exampleImage_2],
       techStack: [
         'react',
         'javascript',
