@@ -6,7 +6,7 @@ import LinkOptions from '@/components/section/Projects/LinkOptions';
 import ImageSlider from '@/components/section/Projects/ImageSlider';
 import Subheading from '@/components/common/Subheading/Subheading';
 import TextList from '@/components/common/TextList/TextList';
-import { MotionContainer, MotionItem } from '@/components/common/motion';
+import { MotionContainer, MotionItem } from '@/components/common/Motion';
 
 const Projects = () => {
   return (
@@ -16,6 +16,7 @@ const Projects = () => {
           <article>
             <MotionItem as="div">
               <h3>{content.title}</h3>
+              <p className="text-gray-400 text-sm md:text-[1.1rem]">{content.personnel}</p>
               <p className="text-gray-400 text-sm md:text-[1.1rem]">{content.period}</p>
             </MotionItem>
             <TechStack techStack={content.techStack} />
