@@ -5,19 +5,27 @@ import Image, { StaticImageData } from 'next/image';
 interface ImageProps {
   src: string | StaticImageData;
   className?: string;
+  imgClassName?: string;
   alt: string;
   priority?: boolean;
+  width?: number;
+  height?: number;
+  fill?: boolean;
 }
-const ImageComponent = ({ src, className, alt, priority = false }: ImageProps) => {
+
+const ImageComponent = ({
+  className,
+  imgClassName = 'object-cover',
+  fill = true,
+  ...rest
+}: ImageProps) => {
   return (
-    <div className={clsx('relative overflow-hidden ', className)}>
+    <div className={clsx(fill ? 'relative overflow-hidden' : '', className)}>
       <Image
-        src={src}
-        alt={alt}
-        fill
-        sizes="(max-width: 768px) 100vw, 50vw"
-        className="object-cover"
-        priority={priority}
+        {...rest}
+        fill={fill}
+        sizes={fill ? '(max-width: 768px) 100vw, 50vw' : undefined}
+        className={imgClassName}
       />
     </div>
   );
