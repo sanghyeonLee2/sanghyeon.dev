@@ -158,14 +158,6 @@ export const USED_SKILL: SkillType = {
       icon: <ImageComponent className={USED_ICON_CLASS} src={zustandImg} alt="zustand" />,
     },
     {
-      text: 'Git',
-      icon: <SiGit className={USED_ICON_CLASS} style={{ color: 'var(--git)' }} />,
-    },
-    {
-      text: 'Notion',
-      icon: <SiNotion className={USED_ICON_CLASS} style={{ color: 'var(--notion)' }} />,
-    },
-    {
       text: 'esbuild',
       icon: <SiEsbuild className={USED_ICON_CLASS} style={{ color: 'var(--esbuild)' }} />,
     },
@@ -195,6 +187,14 @@ export const USED_SKILL: SkillType = {
       ),
     },
     {
+      text: 'Git',
+      icon: <SiGit className={USED_ICON_CLASS} style={{ color: 'var(--git)' }} />,
+    },
+    {
+      text: 'Notion',
+      icon: <SiNotion className={USED_ICON_CLASS} style={{ color: 'var(--notion)' }} />,
+    },
+    {
       text: 'MySQL',
       icon: <SiMysql className={USED_ICON_CLASS} style={{ color: 'var(--mysql)' }} />,
     },
@@ -203,36 +203,34 @@ export const USED_SKILL: SkillType = {
       icon: <SiPython className={USED_ICON_CLASS} style={{ color: 'var(--python)' }} />,
     },
     {
-      text: 'Flask',
-      icon: <SiFlask className={USED_ICON_CLASS} style={{ color: 'var(--flask)' }} />,
-    },
-
-    {
       text: 'C',
       icon: <SiC className={USED_ICON_CLASS} style={{ color: 'var(--c)' }} />,
     },
-    {
-      text: 'PyTorch',
-      icon: <SiPytorch className={USED_ICON_CLASS} style={{ color: 'var(--pytorch)' }} />,
-    },
-    {
-      text: 'Hugging Face',
-      icon: <SiHuggingface className={USED_ICON_CLASS} style={{ color: 'var(--huggingface)' }} />,
-    },
+    // {
+    //   text: 'PyTorch',
+    //   icon: <SiPytorch className={USED_ICON_CLASS} style={{ color: 'var(--pytorch)' }} />,
+    // },
+    // {
+    //   text: 'Hugging Face',
+    //   icon: <SiHuggingface className={USED_ICON_CLASS} style={{ color: 'var(--huggingface)' }} />,
+    // },
 
-    {
-      text: 'BeautifulSoup',
-      icon: (
-        <ImageComponent
-          className="w-full h-full object-contain"
-          src={beautifulSoupImg}
-          alt="beautifulSoup"
-        />
-      ),
-    },
-    {
-      text: 'Selenium',
-      icon: <SiSelenium className={USED_ICON_CLASS} style={{ color: 'var(--selenium)' }} />,
-    },
+    // {
+    //   text: 'BeautifulSoup',
+    //   icon: (
+    //     <ImageComponent
+    //       className="w-full h-full object-contain"
+    //       src={beautifulSoupImg}
+    //       alt="beautifulSoup"
+    //     />
+    //   ),
+    // },
+    // {
+    //   text: 'Selenium',
+    //   icon: <SiSelenium className={USED_ICON_CLASS} style={{ color: 'var(--selenium)' }} />,
+    // },{
+    //   text: 'Flask',
+    //   icon: <SiFlask className={USED_ICON_CLASS} style={{ color: 'var(--flask)' }} />,
+    // },
   ],
 };
