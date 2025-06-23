@@ -96,15 +96,19 @@
   --json-server: #e74c3c;
   --json-server-text: #fff;
 
-  --zustand: #000000;
+  --python: #3776ab;
+  --python-text: #fff;
+
   --pytorch: #ee4c2c;
+  --pytorch-text: #fff;
+
+  --zustand: #000000;
   --react-native: #61dafb;
   --beautifulsoup: #f47944;
   --selenium: #43b02a;
   --c: #a8b9cc;
   --git: #f05032;
   --esbuild: #ffcf00;
-  --python: #3776ab;
 }
 
 html.dark {
@@ -222,13 +226,17 @@ html.dark {
   --json-server: #e74c3ccc;
   --json-server-text: #fff;
 
-  --zustand: #000000cc;
+  --python: #3776abcc;
+  --python-text: #fff;
+
   --pytorch: #ee4c2ccc;
+  --pytorch-text: #fff;
+
+  --zustand: #000000cc;
   --react-native: #61dafbcc;
   --beautifulsoup: #f47944cc;
   --selenium: #43b02acc;
   --c: #a8b9cccc;
   --git: #f05032cc;
   --esbuild: #ffcf00cc;
-  --python: #3776abcc;
 }
