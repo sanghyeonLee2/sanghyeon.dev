@@ -16,7 +16,7 @@ const LinkOptions = ({ linksOption }: { linksOption: LinkOptionsType }) => {
             className="shadow-[var(--shadow)] rounded border-[0.05rem] border-gray-300 dark:border-transparent bg-[var(--color-btn-bg)] hover:bg-[var(--color-primary)]/70 transition-colors duration-300"
           >
             <ALink
-              className="flex gap-2.5 flex-center font-semibold text-[1rem] sm:text-[1.1rem] text-inherit py-3 px-3"
+              className="flex gap-3 flex-center font-semibold text-[1rem] sm:text-[1.1rem] text-inherit py-3 px-3"
               {...option}
               {...BLANK_LINK}
               onClick={(e) => e.stopPropagation()}
