@@ -58,6 +58,9 @@
     "nodedotjs",
     "zustand",
     "beautifulSoup",
-    "esbuild"
+    "esbuild",
+    "reactquery",
+    "reacthookform",
+    "styledcomponents"
   ]
 }
