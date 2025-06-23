@@ -2,7 +2,7 @@
 
 import ImageComponent from '@/components/common/Image/ImageComponent';
 import React from 'react';
-import example from '@/assets/example.png';
+import jobPhoto from '@/assets/job-photo.webp';
 import ALink from '@/components/common/Link/ALink';
 import { MotionContainer, MotionItem } from '@/components/common/Motion';
 import { BLANK_LINK } from '@/constants/dom';
@@ -14,11 +14,11 @@ const INTRODUCE =
 const About = () => {
   return (
     <MotionContainer as="div">
-      <MotionItem as="div" className="w-full flex flex-col sm:flex-row items-center gap-10 mb-8">
+      <MotionItem as="div" className="w-full flex flex-col sm:flex-row items-center gap-11 mb-8">
         <ImageComponent
-          src={example}
+          src={jobPhoto}
           alt="증명사진"
-          className="w-60 h-60 flex-shrink-0 rounded-xl"
+          className="w-[175px] h-[225px] flex-shrink-0 rounded-xl shadow-[var(--shadow)]"
         />
         <div className="flex-1 flex flex-col text-center sm:text-left gap-3">
           <p className="font-extrabold text-3xl">이상현</p>
