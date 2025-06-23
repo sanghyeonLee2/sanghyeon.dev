@@ -15,6 +15,7 @@ const ImageSlider = ({ imgs }: { imgs: StaticImageData[] }) => {
   return (
     <MotionItem as="div">
       <Swiper
+        loop={imgs.length >= 4}
         modules={[Navigation]}
         navigation
         spaceBetween={20}
@@ -32,7 +33,7 @@ const ImageSlider = ({ imgs }: { imgs: StaticImageData[] }) => {
           <SwiperSlide key={img.src}>
             <Button
               onClick={() => open(img)}
-              className="rounded h-full w-full flex-center bg-black/60"
+              className="rounded h-full w-full flex-center bg-black/60 dark:bg-gray-800"
             >
               <ImageComponent
                 src={img}
