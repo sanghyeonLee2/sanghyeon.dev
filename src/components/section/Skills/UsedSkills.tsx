@@ -15,7 +15,7 @@ const UsedSkills = () => {
             className="flex-center flex-col gap-2.5 duration-200 hover:-translate-y-1 cursor-pointer p-content rounded-xl bg-[var(--color-btn-bg)] shadow-[var(--shadow)]"
           >
             {icon}
-            <span className="text-[0.75rem] sm:text-[0.7rem]">{text}</span>
+            <span className="text-[0.75rem] sm:text-[0.9rem] text-center">{text}</span>
           </MotionItem>
         ))}
       </ul>
