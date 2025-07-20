@@ -102,6 +102,8 @@
   --pytorch: #ee4c2c;
   --pytorch-text: #fff;
 
+  --youtube: #ff0033;
+
   --zustand: #000000;
   --react-native: #61dafb;
   --beautifulsoup: #f47944;
@@ -109,6 +111,7 @@
   --c: #a8b9cc;
   --git: #f05032;
   --esbuild: #ffcf00;
+  --esbuild-text: #fff;
 }
 
 html.dark {
@@ -232,6 +235,8 @@ html.dark {
   --pytorch: #ee4c2ccc;
   --pytorch-text: #fff;
 
+  --youtube: #c53030cc;
+
   --zustand: #000000cc;
   --react-native: #61dafbcc;
   --beautifulsoup: #f47944cc;
@@ -239,4 +244,5 @@ html.dark {
   --c: #a8b9cccc;
   --git: #f05032cc;
   --esbuild: #ffcf00cc;
+  --esbuild-text: #000;
 }
