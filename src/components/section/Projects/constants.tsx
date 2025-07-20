@@ -1,30 +1,63 @@
 import exampleImage from '@/assets/example.png';
-import portfolio1 from '@/assets/portfolio-1.png';
-import godOfDelivery1 from '@/assets/god-of-delivery-1.png';
-import godOfDelivery2 from '@/assets/god-of-delivery-2.png';
-import godOfDelivery3 from '@/assets/god-of-delivery-3.png';
-import godOfDelivery4 from '@/assets/god-of-delivery-4.png';
-import godOfDelivery5 from '@/assets/god-of-delivery-5.png';
-import godOfDelivery6 from '@/assets/god-of-delivery-6.png';
-import godOfDelivery7 from '@/assets/god-of-delivery-7.png';
-import godOfDelivery8 from '@/assets/god-of-delivery-8.png';
-import godOfDelivery9 from '@/assets/god-of-delivery-9.png';
-import godOfDelivery10 from '@/assets/god-of-delivery-10.png';
-import godOfDelivery11 from '@/assets/god-of-delivery-11.png';
-
-import exampleImage_2 from '@/assets/example_2.png';
+import {
+  recipickImages,
+  portfolioImages,
+  coffeeSalesImages,
+  godOfDeliveryImages,
+  blogReviewCheckerImages,
+} from '@/imageModules/projectImages';
 import { ProjectsType } from '@/components/section/Projects/projects.type';
-import { FaGithub } from 'react-icons/fa';
+import { FaAws, FaGithub } from 'react-icons/fa6';
 import { IoLogoVercel } from 'react-icons/io5';
-
-const LINK_ICON_CLASS = 'w-10 h-10';
+import { FaRegFileAlt, FaYoutube } from 'react-icons/fa';
+import { VscGithub } from 'react-icons/vsc';
+const LINK_ICON_CLASS = 'text-4xl sm:text-[2.75rem]';
 
 export const PROJECT: ProjectsType = {
   subheading: '📝 상세내용',
   contents: [
     {
-      key: 1,
-      title: 'sanghyeon-blog',
+      title: '레시픽 (Recipick)',
+      personnel: '4인 개발 ( FE 1명, BE 1명, AI 1명, 기획 1명)',
+      period: '2025-06-27 ~ 2025-07-11',
+      imgs: recipickImages,
+      techStack: ['react', 'tailwind', 'typescript', 'vercel', 'notion'],
+      description:
+        'AI를 활용해 유튜브 요리 영상에서 레시피를 추출해 저장하고, 이를 바탕으로 유사 레시피를 추천해주는 React 기반 웹 애플리케이션입니다.\n제 10회 AI·SW융합 해커톤 장려상 수상작입니다.',
+      details: [
+        'React, Vite 기반 프론트엔드 단독 구현, 전체 페이지 및 상태 흐름 구성',
+        '공통 API 요청 흐름을 fetch 래퍼 + 기능별 요청 함수로 추상화해 유지 보수성 향상',
+        'React Query v5 기반으로 useQuery, useMutation, invalidateQueries 등을 활용한 API 캐싱 및 비동기 처리',
+        '분석 중 상태에 따라 AI 분석 완료 이벤트를 Supabase Realtime (WebSocket)으로 수신하고 오버레이 UI로 피드백 제공',
+        'react-toastify, Skeleton, ErrorBoundary 등을 통해 사용자 상태 피드백 및 로딩/에러 처리',
+        'react-hook-form + zod 기반으로 로그인/회원가입 시 입력 유효성 검증 및 에러 포커싱 처리',
+        'GitHub Actions 기반 CI/CD 구성, main 브랜치 push 시 자동 배포 -> GitHubPages로 정적 배포',
+        'TypeScript로 전역 타입 정의 및 API 응답 타입 분리, zod와의 연계를 통해 런타임 검증 처리',
+      ],
+
+      linksOption: {
+        subheading: '🔗 관련링크',
+        contents: [
+          {
+            text: '깃허브',
+            icon: <FaGithub className={LINK_ICON_CLASS} style={{ color: 'var(--github)' }} />,
+            href: 'https://github.com/sanghyeonLee2/dn-recipick.github.io',
+          },
+          {
+            text: '배포',
+            icon: <VscGithub className={LINK_ICON_CLASS} style={{ color: 'var(--vercel)' }} />,
+            href: 'https://dn-recipick.github.io',
+          },
+          {
+            text: '영상',
+            icon: <FaYoutube className={LINK_ICON_CLASS} style={{ color: 'var(--youtube)' }} />,
+            href: 'https://www.youtube.com/watch?v=A8pz5E6wDIA',
+          },
+        ],
+      },
+    },
+    {
+      title: '개인 블로그 사이트',
       personnel: '1인 개발',
       period: '2025-05-05 ~ 2025-05-26',
       imgs: [exampleImage],
@@ -58,21 +91,26 @@ export const PROJECT: ProjectsType = {
       },
     },
     {
-      key: 2,
       title: '개인 포트폴리오 사이트',
       personnel: '1인 개발',
       period: '2025-06-05 ~ 2025-06-18',
-      imgs: [portfolio1],
-      techStack: ['next', 'typescript', 'vercel', 'framer-motion', 'next-themes', 'swiper'],
+      imgs: portfolioImages,
+      techStack: ['next', 'typescript', 'vercel', 'framer-motion', 'next-themes'],
       description:
         'Next.js, Tailwind CSS, TypeScript 기반으로 제작한 포트폴리오 웹사이트이며, 다크 모드, 반응형 레이아웃, 애니메이션 기능을 적용했습니다.',
       details: [
         'framer-motion 기반 재사용 가능한 컴포넌트 MotionContainer, MotionItem를 구현해 태그 동적 지정 및 등장 시점 제어가 가능한 애니메이션 구조 설계',
         'Tailwind CSS와 CSS 변수로 브랜드 컬러 관리, 반응형·테마 대응 UI/UX 설계',
+        'Vercel과 GitHub 연동을 통한 자동 배포 CI/CD 파이프라인 구축',
       ],
       linksOption: {
         subheading: '🔗 관련링크',
         contents: [
+          {
+            text: '깃허브',
+            icon: <FaGithub className={LINK_ICON_CLASS} style={{ color: 'var(--vercel)' }} />,
+            href: 'https://github.com/sanghyeonLee2/sanghyeon.dev',
+          },
           {
             text: '배포',
             icon: <IoLogoVercel className={LINK_ICON_CLASS} style={{ color: 'var(--vercel)' }} />,
@@ -82,23 +120,10 @@ export const PROJECT: ProjectsType = {
       },
     },
     {
-      key: 3,
       title: '배달의 신 (God of Delivery)',
       personnel: '2인 개발 (FE 1명, BE 1명)',
       period: '2023-08-01 ~ 2024-12-30',
-      imgs: [
-        godOfDelivery1,
-        godOfDelivery2,
-        godOfDelivery3,
-        godOfDelivery4,
-        godOfDelivery5,
-        godOfDelivery6,
-        godOfDelivery7,
-        godOfDelivery8,
-        godOfDelivery9,
-        godOfDelivery10,
-        godOfDelivery11,
-      ],
+      imgs: godOfDeliveryImages,
       techStack: [
         'react',
         'javascript',
@@ -113,7 +138,7 @@ export const PROJECT: ProjectsType = {
         'kakao',
       ],
       description:
-        '"배달의민족"과 "요기요"의 배달 서비스 모델을 참고하여 제작한 React 기반 웹 애플리케이션으로, 백엔드 개발자 1명과 함께한 2인 협업 프로젝트입니다.',
+        '"배달의민족"과 "요기요"의 배달 서비스 모델을 참고하여 제작한 React 기반 웹 애플리케이션으로, 백엔드 1명과 함께한 2인 협업 프로젝트입니다.',
       details: [
         'react-router-dom으로 유저/사장/인증 페이지의 역할 기반 접근 제어 및 중첩 라우팅 구현',
         '커스텀 훅, 유틸 함수, API 모듈 등 관심사 기반 코드 분리로 UI와 비즈니스 로직 구분',
@@ -132,59 +157,62 @@ export const PROJECT: ProjectsType = {
         subheading: '🔗 관련링크',
         contents: [
           {
-            text: 'GitHub',
+            text: '깃허브',
             icon: <FaGithub className={LINK_ICON_CLASS} style={{ color: 'var(--github)' }} />,
             href: 'https://github.com/sanghyeonLee2/god-of-delivery',
           },
           {
             text: '배포',
-            icon: <IoLogoVercel className={LINK_ICON_CLASS} style={{ color: 'var(--vercel)' }} />,
+            icon: <FaAws className={LINK_ICON_CLASS} style={{ color: 'var(--aws)' }} />,
             href: 'https://dv19wj9tllwf5.cloudfront.net/',
           },
         ],
       },
     },
     {
-      key: 4,
-      title: '광고 리뷰 판별 크롬 확장 프로그램',
+      title: '광고성 리뷰 블로그 판별 크롬 확장 프로그램',
       personnel: '1인 개발',
       period: '2024-03-01 ~ 2024-06-01',
-      imgs: [exampleImage],
+      imgs: blogReviewCheckerImages,
       techStack: [
         'javascript',
-        'react',
-        'tailwind',
+        'chrome-extension',
+        'python',
         'flask',
+        'pytorch',
+        'esbuild',
         'kobert',
         'huggingface',
-        'chrome-extension',
       ],
       description: '블로그 리뷰의 광고성 여부를 판단하는 KoBERT 기반 크롬 확장 프로그램입니다.',
       details: [
         'ESM 사용 제약을 esbuild로 해결하여 import/export 모듈 시스템 구현',
+        'Manifest v3 기반 크롬 확장 프로그램 개발 및 esbuild 번들링',
         '학습 데이터 직접 수집, 크롤링 자동화 파이프라인 구축',
-        'BeautifulSoup, Selenium, Playwright를 병행하여 크롤러 제작',
         'KoBERT 모델을 PyTorch로 학습하여 광고성 텍스트 분류 모델 개발',
         'Flask API 서버 구현 및 크롬 확장 프로그램과의 실시간 통신 구성',
-        'Manifest v3 기반 크롬 확장 프로그램 개발 및 esbuild 번들링',
       ],
       linksOption: {
         subheading: '🔗 관련링크',
         contents: [
           {
-            text: 'GitHub',
+            text: '깃허브',
             icon: <FaGithub className={LINK_ICON_CLASS} style={{ color: 'var(--github)' }} />,
             href: 'https://github.com/sanghyeonLee2/blog-review-checker',
+          },
+          {
+            text: '논문(DBpia)',
+            icon: <FaRegFileAlt className={LINK_ICON_CLASS} style={{ color: 'var(--github)' }} />,
+            href: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11926115',
           },
         ],
       },
     },
     {
-      key: 5,
       title: '커피 판매 시스템',
       period: '2023-06-01 ~ 2023-06-30',
       personnel: '1인 개발',
-      imgs: [exampleImage, exampleImage_2],
+      imgs: coffeeSalesImages,
       techStack: [
         'react',
         'javascript',
@@ -207,7 +235,7 @@ export const PROJECT: ProjectsType = {
         subheading: '🔗 관련링크',
         contents: [
           {
-            text: 'GitHub',
+            text: '깃허브',
             icon: <FaGithub className={LINK_ICON_CLASS} style={{ color: 'var(--github)' }} />,
             href: 'https://github.com/sanghyeonLee2/coffee-sales-system',
           },
