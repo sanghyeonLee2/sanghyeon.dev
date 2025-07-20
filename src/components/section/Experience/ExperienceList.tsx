@@ -1,6 +1,6 @@
 import { MotionContainer, MotionItem } from '@/components/common/Motion';
-import Subheading from '@/components/common/Subheading/Subheading';
-import TextList from '@/components/common/TextList/TextList';
+import Subheading from '@/components/common/Text/Subheading';
+import TextList from '@/components/common/Text/TextList';
 import { ExperienceType } from '@/components/section/Experience/experience.type';
 import clsx from 'clsx';
 import React from 'react';
@@ -14,7 +14,9 @@ const ExperienceList = ({ contents, subheading, isLast = false }: ExperienceType
           <li key={content.name}>
             <MotionItem as="article" className="flex flex-col md:flex-row gap-6 py-8 px-3">
               <div className="flex-col md:w-70 flex-shrink-0 content-center">
-                <p className="text-xl md:text-2xl content-center text-center">{content.name}</p>
+                <p className="text-xl md:text-2xl content-center text-center break-keep">
+                  {content.name}
+                </p>
                 <p className="text-sm text-gray-400 text-center">{content.period}</p>
               </div>
               <div className="content-center">
