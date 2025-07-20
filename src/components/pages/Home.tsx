@@ -6,7 +6,7 @@ import Intro from '@/components/section/Intro';
 import Layout from '@/components/section/Layout';
 import Projects from '@/components/section/Projects/Projects';
 import Skills from '@/components/section/Skills/Skills';
-import Thanks from '@/components/section/Skills/Thanks';
+import Thanks from '@/components/section/Thanks';
 
 const sections: { id: string; Component: React.FC }[] = [
   { id: 'intro', Component: Intro },
