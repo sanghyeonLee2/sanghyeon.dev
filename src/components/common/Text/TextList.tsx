@@ -11,7 +11,7 @@ const TextList = ({ textList, className }: TextListProps) => {
     <ul className={clsx('space-y-1 list-disc pl-5', className)}>
       {textList.map((text) => (
         <li key={text}>
-          <p>{text}</p>
+          <p className="break-keep">{text}</p>
         </li>
       ))}
     </ul>
