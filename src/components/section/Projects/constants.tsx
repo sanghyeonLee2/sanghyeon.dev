@@ -1,4 +1,4 @@
-import exampleImage from '@/assets/example.png';
+import exampleImage from '@/assets/blog-1.png';
 import {
   recipickImages,
   portfolioImages,
