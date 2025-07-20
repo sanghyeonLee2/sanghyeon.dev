@@ -17,7 +17,7 @@ export default function ImageModal() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 z-50 bg-black/70 flex-center p-4"
+          className="fixed inset-0 z-50 bg-black/70 p-4 flex-center"
           onClick={close}
         >
           <motion.div
@@ -33,8 +33,8 @@ export default function ImageModal() {
               width={800}
               height={480}
               fill={false}
-              className="max-w-full max-h-[90vh]"
-              imgClassName="object-contain"
+              className="max-w-full"
+              imgClassName="object-contain max-h-screen"
             />
           </motion.div>
         </motion.div>
