@@ -1,8 +1,8 @@
 import { MotionContainer, MotionItem } from '@/components/common/Motion';
-import TextList from '@/components/common/TextList/TextList';
+import TextList from '@/components/common/Text/TextList';
 import { CORE_SKILL } from './constants';
 import React from 'react';
-import Subheading from '@/components/common/Subheading/Subheading';
+import Subheading from '@/components/common/Text/Subheading';
 
 const CoreSkills = () => {
   return (
