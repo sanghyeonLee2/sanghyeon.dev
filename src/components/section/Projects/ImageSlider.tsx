@@ -13,12 +13,12 @@ import { useModalStore } from '@/store/useModalStore';
 const ImageSlider = ({ imgs }: { imgs: StaticImageData[] }) => {
   const { open } = useModalStore();
   return (
-    <MotionItem as="div">
+    <MotionItem as="div" className="py-3">
       <Swiper
         loop={imgs.length >= 4}
         modules={[Navigation]}
         navigation
-        spaceBetween={20}
+        spaceBetween={15}
         breakpoints={{
           0: {
             slidesPerView: 1,
@@ -27,18 +27,18 @@ const ImageSlider = ({ imgs }: { imgs: StaticImageData[] }) => {
             slidesPerView: 2,
           },
         }}
-        className="w-full h-70"
+        className="w-full h-[18.75rem]"
       >
         {imgs.map((img, idx) => (
           <SwiperSlide key={img.src}>
             <Button
               onClick={() => open(img)}
-              className="rounded h-full w-full flex-center bg-black/60 dark:bg-gray-800"
+              className="h-full w-full flex-center bg-black/60 dark:bg-gray-800"
             >
               <ImageComponent
                 src={img}
                 alt={`슬라이드 ${img.src}`}
-                className="h-full w-full max-w-full max-h-full"
+                className="h-full w-full max-w-full max-h-full border dark:border-gray-500"
                 imgClassName="object-contain transition-transform duration-200 hover:scale-110"
                 priority={idx < 2}
               />
