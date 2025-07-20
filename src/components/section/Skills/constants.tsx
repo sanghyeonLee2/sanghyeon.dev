@@ -9,25 +9,18 @@ import {
   SiNotion,
   SiMysql,
   SiSequelize,
-  SiFlask,
-  SiPython,
-  SiC,
-  SiHuggingface,
   SiNodedotjs,
-  SiPytorch,
   SiEsbuild,
-  SiSelenium,
-  SiGit,
   SiExpress,
   SiReactquery,
   SiReacthookform,
   SiStyledcomponents,
   SiAxios,
+  SiPytorch,
+  SiHuggingface,
 } from 'react-icons/si';
 import { IoLogoJavascript } from 'react-icons/io';
 import zustandImg from '@/assets/zustand.svg';
-import beautifulSoupImg from '@/assets/beautifulSoup.png';
-import { IoExtensionPuzzle } from 'react-icons/io5';
 import { FaAws } from 'react-icons/fa';
 import { SkillType } from './skills.type';
 import ImageComponent from '@/components/common/Image/ImageComponent';
@@ -137,6 +130,10 @@ export const USED_SKILL: SkillType = {
   subheading: '🧪 Other Tools I’ve Used',
   skills: [
     {
+      text: 'Zustand',
+      icon: <ImageComponent className={USED_ICON_CLASS} src={zustandImg} alt="zustand" />,
+    },
+    {
       text: 'Styled Components',
       icon: (
         <SiStyledcomponents
@@ -152,10 +149,6 @@ export const USED_SKILL: SkillType = {
     {
       text: 'Vercel',
       icon: <SiVercel className={USED_ICON_CLASS} style={{ color: 'var(--vercel)' }} />,
-    },
-    {
-      text: 'Zustand',
-      icon: <ImageComponent className={USED_ICON_CLASS} src={zustandImg} alt="zustand" />,
     },
     {
       text: 'esbuild',
@@ -178,19 +171,6 @@ export const USED_SKILL: SkillType = {
       icon: <SiSequelize className={USED_ICON_CLASS} style={{ color: 'var(--sequelize)' }} />,
     },
     {
-      text: 'Chrome Extension',
-      icon: (
-        <IoExtensionPuzzle
-          className={USED_ICON_CLASS}
-          style={{ color: 'var(--chrome-extension)' }}
-        />
-      ),
-    },
-    {
-      text: 'Git',
-      icon: <SiGit className={USED_ICON_CLASS} style={{ color: 'var(--git)' }} />,
-    },
-    {
       text: 'Notion',
       icon: <SiNotion className={USED_ICON_CLASS} style={{ color: 'var(--notion)' }} />,
     },
@@ -199,21 +179,13 @@ export const USED_SKILL: SkillType = {
       icon: <SiMysql className={USED_ICON_CLASS} style={{ color: 'var(--mysql)' }} />,
     },
     {
-      text: 'Python',
-      icon: <SiPython className={USED_ICON_CLASS} style={{ color: 'var(--python)' }} />,
+      text: 'PyTorch',
+      icon: <SiPytorch className={USED_ICON_CLASS} style={{ color: 'var(--pytorch)' }} />,
     },
     {
-      text: 'C',
-      icon: <SiC className={USED_ICON_CLASS} style={{ color: 'var(--c)' }} />,
+      text: 'Hugging Face',
+      icon: <SiHuggingface className={USED_ICON_CLASS} style={{ color: 'var(--huggingface)' }} />,
     },
-    // {
-    //   text: 'PyTorch',
-    //   icon: <SiPytorch className={USED_ICON_CLASS} style={{ color: 'var(--pytorch)' }} />,
-    // },
-    // {
-    //   text: 'Hugging Face',
-    //   icon: <SiHuggingface className={USED_ICON_CLASS} style={{ color: 'var(--huggingface)' }} />,
-    // },
 
     // {
     //   text: 'BeautifulSoup',
