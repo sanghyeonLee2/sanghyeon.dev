@@ -4,7 +4,6 @@ import { LinkType } from '@/types/types';
 export type ProjectsType = {
   subheading: string;
   contents: {
-    key: number;
     personnel: string;
     period: string;
     title: string;
