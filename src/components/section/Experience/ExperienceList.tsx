@@ -14,9 +14,9 @@ const ExperienceList = ({ contents, subheading, isLast = false }: ExperienceType
           <li key={content.name}>
             <MotionItem as="article" className="flex flex-col md:flex-row gap-6 py-8 px-3">
               <div className="flex-col md:w-70 flex-shrink-0 content-center">
-                <p className="text-xl md:text-2xl content-center text-center break-keep">
+                <h3 className="text-xl md:text-2xl content-center text-center break-keep">
                   {content.name}
-                </p>
+                </h3>
                 <p className="text-sm text-gray-400 text-center">{content.period}</p>
               </div>
               <div className="content-center">
