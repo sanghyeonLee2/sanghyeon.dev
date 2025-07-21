@@ -23,7 +23,7 @@ export const PROJECT: ProjectsType = {
       imgs: recipickImages,
       techStack: ['react', 'tailwind', 'typescript', 'vercel', 'notion'],
       description:
-        'AI를 활용해 유튜브 요리 영상에서 레시피를 추출해 저장하고, 이를 바탕으로 유사 레시피를 추천해주는 React 기반 웹 애플리케이션입니다.\n제 10회 AI·SW융합 해커톤 장려상 수상작입니다.',
+        'AI를 활용해 유튜브 요리 영상에서 레시피를 추출해 저장하고, 이를 바탕으로 유사 레시피를 추천해주는 React 기반 웹 애플리케이션입니다.\n프론트엔드 전반을 단독 구현하였으며 제 10회 AI·SW융합 해커톤 장려상 수상작입니다.',
       details: [
         'React, Vite 기반 프론트엔드 단독 구현, 전체 페이지 및 상태 흐름 구성',
         '공통 API 요청 흐름을 fetch 래퍼 + 기능별 요청 함수로 추상화해 유지 보수성 향상',
