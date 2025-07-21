@@ -18,7 +18,7 @@ const CoreSkills = () => {
             <article>
               <div className="flex items-center gap-3 mb-3">
                 {icon}
-                <p className="text-[1.4rem] md:text-2xl">{text}</p>
+                <h3 className="text-[1.4rem] md:text-2xl mb-0">{text}</h3>
               </div>
               <TextList textList={descriptions as string[]} />
             </article>

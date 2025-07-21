@@ -16,14 +16,16 @@ const Projects = () => {
           <article>
             <MotionItem as="div">
               <h3 className="pb-2">{content.title}</h3>
-              <p className="text-gray-400 text-sm md:text-[1.1rem]">{content.personnel}</p>
-              <p className="text-gray-400 text-sm md:text-[1.1rem]">{content.period}</p>
+              <p className="text-[0.9rem] sm:text-[1.1rem] pb-1 font-semibold">
+                {content.personnel}
+              </p>
+              <p className="text-gray-400 text-sm sm:text-base">{content.period}</p>
             </MotionItem>
             <TechStack techStack={content.techStack} />
             <ImageSlider imgs={content.imgs} />
             <MotionItem
               as="p"
-              className="p-5 my-6 bg-[var(--color-sub-bg)] break-keep rounded-lg whitespace-pre-line font-medium"
+              className="p-5 my-6 bg-[var(--color-sub-bg)] break-keep rounded-lg whitespace-pre-line font-semibold"
             >
               {content.description}
             </MotionItem>
