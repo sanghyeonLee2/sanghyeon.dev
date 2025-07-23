@@ -10,7 +10,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const Button = ({ children, text, className, type = 'button', ...rest }: ButtonProps) => {
   return (
-    <button type={type} className={clsx('button-hover transition', className)} {...rest}>
+    <button type={type} className={clsx('transition', className)} {...rest}>
       {children}
       {text}
     </button>
