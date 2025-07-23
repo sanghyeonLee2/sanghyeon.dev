@@ -22,7 +22,7 @@ const Projects = () => {
               <p className="text-gray-400 text-sm sm:text-base">{content.period}</p>
             </MotionItem>
             <TechStack techStack={content.techStack} />
-            <ImageSlider imgs={content.imgs} />
+            <ImageSlider imgs={content.imgs} title={content.title} />
             <MotionItem
               as="p"
               className="p-5 my-6 bg-[var(--color-sub-bg)] break-keep rounded-lg whitespace-pre-line font-semibold"
