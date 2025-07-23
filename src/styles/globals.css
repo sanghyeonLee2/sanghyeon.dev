@@ -35,16 +35,6 @@
     color: var(--color-text);
     @apply antialiased;
   }
-  .swiper-button-prev,
-  .swiper-button-next {
-    @apply transition hover:scale-125 bg-[var(--color-primary)]/30 rounded-lg;
-  }
-  .swiper-button-prev::after,
-  .swiper-button-next::after {
-    font-weight: 500;
-    font-size: 1.3rem !important;
-    color: var(--color-primary) !important;
-  }
 
   html,
   body {
