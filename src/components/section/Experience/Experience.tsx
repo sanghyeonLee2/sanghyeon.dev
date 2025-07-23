@@ -1,3 +1,4 @@
+'use client';
 import { EXPERIENCES } from '@/components/section/Experience/constants';
 import ExperienceList from '@/components/section/Experience/ExperienceList';
 import React from 'react';

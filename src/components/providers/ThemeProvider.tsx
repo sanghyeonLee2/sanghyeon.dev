@@ -5,7 +5,7 @@ import { JSX } from 'react';
 
 export function ThemeProvider({ children }: { children: React.ReactNode }): JSX.Element {
   return (
-    <NextThemesProvider enableSystem={false} defaultTheme="dark" attribute="class">
+    <NextThemesProvider enableSystem={false} defaultTheme="light" attribute="class">
       {children}
     </NextThemesProvider>
   );

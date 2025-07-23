@@ -1,3 +1,4 @@
+'use client';
 import { MotionContainer, MotionItem } from '@/components/common/Motion';
 import TextList from '@/components/common/Text/TextList';
 import { CORE_SKILL } from './constants';

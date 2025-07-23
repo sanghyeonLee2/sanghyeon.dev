@@ -1,3 +1,4 @@
+'use client';
 import ALink from '@/components/common/Link/ALink';
 import React from 'react';
 import { BLANK_LINK } from '@/constants/dom';

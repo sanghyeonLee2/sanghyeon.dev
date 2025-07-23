@@ -1,3 +1,4 @@
+'use client';
 import { MotionContainer, MotionItem } from '@/components/common/Motion';
 import Subheading from '@/components/common/Text/Subheading';
 import { USED_SKILL } from '@/components/section/Skills/constants';

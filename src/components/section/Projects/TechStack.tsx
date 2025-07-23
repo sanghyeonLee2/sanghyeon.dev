@@ -1,3 +1,4 @@
+'use client';
 import { MotionItem } from '@/components/common/Motion';
 import React from 'react';
 
